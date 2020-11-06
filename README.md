@@ -15,3 +15,6 @@
 <h2>Player's gaol in the game</h2>
 <p>The goal of the game is for the player to kill all of the enemy robots. These enemy robots will move towards the player, but the player can choose to roam around the city to kill them. When the player has killed all of the enemy robots, then the player will win the game and the game will end.</p>
 <p>If the player dies before the player has killed all of the enemy robots, then the player will lose the game.</p>
+
+<h2>Links to videos or websites that have helped me</h2>
+https://www.youtube.com/watch?v=Ri1uNPNlaVs&ab_channel=PeerPlay
