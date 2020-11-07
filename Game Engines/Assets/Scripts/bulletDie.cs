@@ -21,13 +21,17 @@ public class bulletDie : MonoBehaviour
             
                 other.gameObject.GetComponent<EnemyHealth>();
                 EnemyHealth.health -= 3f;
-                Destroy(gameObject, 1f);
+                Destroy(this.gameObject, 0.5f);
                 Debug.Log("Hit! " + other.name);
             
                 //other.gameObject.GetComponent<EnemyHealth>();
            // EnemyHealth.health -= 3f;
             //Destroy(gameObject, 1f);
            // Debug.Log("Hit! " + other.name);
+        }
+        else
+        {
+            Destroy(this.gameObject, 1f);
         }
         
 
