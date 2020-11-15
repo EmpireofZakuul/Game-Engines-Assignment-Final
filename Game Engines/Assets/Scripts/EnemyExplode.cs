@@ -6,7 +6,7 @@ public class EnemyExplode : MonoBehaviour
 {
    [Header("Enemy Explode")]
     public Transform effect;
-    Spawner Spawner;
+   public Spawner Spawner;
     public bool explode = false;
     public AudioSource source;
     public AudioClip[] clipsAudio;

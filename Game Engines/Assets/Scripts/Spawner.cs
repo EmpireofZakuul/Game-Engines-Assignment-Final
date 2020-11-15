@@ -8,7 +8,7 @@ public class Spawner : MonoBehaviour
     public int spawnRateEnemies = 2;
     public int enemyAmoundMax = 10;
     public TextMeshProUGUI Enemys;
-    public static int count = 0;
+    public  int count = 0;
     public GameObject enemyPrefab;
     public GameObject[] spawnPoints;
     private GameObject currentPoint;
