@@ -50,7 +50,7 @@ public class Spawner : MonoBehaviour
             
             count ++;
 
-            //GameObject[] Enemy =
+           // GameObject[] Enemy =
                // GameObject.FindGameObjectsWithTag("Enemy");
             //if (Enemy.Length == enemyAmoundMax)
                 if (count == enemyAmoundMax)

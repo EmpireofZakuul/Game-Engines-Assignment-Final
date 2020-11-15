@@ -5,58 +5,17 @@ using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
-    //EnemyExplode EnemyExplode;
-   // public float health = 3f;
-   // bool Death = true;
-   // public GameObject thisEnemy;
-    //public bool dead = true;
-    public float maxHealth = 100f;
-    public static float health;
-    public Image HealthBar;
+
+    public GameObject theObjectToBeUnParented;
 
 
-    public void Start()
+    public void Update()
     {
-        HealthBar = GetComponent<Image>();
-        health = maxHealth;
-    }
-   public void Update()
-    {
-
-
-        //if (health <= 0 && dead == true)
-        //{
-            HealthBar.fillAmount = health / maxHealth;
-            //if (health <= 0)
-            //{
-                //Die();
-               // Death = false;
-
-            //}
-        //}
-        
+        if(theObjectToBeUnParented = null)
+        {
+            Destroy(this.gameObject, 1f);
+        }
     }
 
-   // public void TakeDamage2(int damage)
-   // {
-       // health -= damage;
-       // dead = true;
 
-
-       // Debug.Log("damage Taken");
-    //}
-
-    //void Die()
-   // {
-        
-       // three_point_wavespawner.Enemiesalive--;
-       // Destroy(gameObject);
-        //dead = false;
-
-   // }
-
-    
-
-
-    
 }
