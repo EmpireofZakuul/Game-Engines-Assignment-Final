@@ -12,10 +12,12 @@ public class CreatePerlinNoise : MonoBehaviour
     public Vector2 offsetOfThePerlinNoiseTexture;
     public bool randomizeTexture;
     public float scaleOfTheNoise = 1f;
+    public int perlinNoiseXAxisGrid = 4;
+    public int perlinNoiseYAxisGrid = 4;
+    public int spaceBetween = 1;
 
-
-
-    void OnEnable()
+    private Texture2D texture;
+   public void Start()
     {
 
         if (instance == null)
@@ -27,6 +29,11 @@ public class CreatePerlinNoise : MonoBehaviour
             Destroy(gameObject);
         }
 
+      
+    }
+
+    public void Update()
+    {
         Renderer renderer = GetComponent<Renderer>();
         renderer.material.mainTexture = GeneratePerlinTexture();
     }
@@ -38,7 +45,7 @@ public class CreatePerlinNoise : MonoBehaviour
             offsetOfThePerlinNoiseTexture = new Vector2(Random.Range(0, 99999), Random.Range(0, 99999));
         }
 
-        Texture2D texture = new Texture2D(perlinImageWidth, perlinImageHeight);
+         texture = new Texture2D(perlinImageWidth, perlinImageHeight);
 
         for (int x = 0; x < perlinImageWidth; x++)
         {
@@ -63,6 +70,39 @@ public class CreatePerlinNoise : MonoBehaviour
 
         return ColorOfThePerlin;
     }
+
+    public float SampleNoise(int x, int y)
+    {
+        int gridStepSizeX = perlinImageHeight / perlinNoiseXAxisGrid;
+        int gridStepSizeY = perlinImageWidth / perlinNoiseYAxisGrid;
+
+        float sampledFloat = texture.GetPixel
+                   ((Mathf.FloorToInt(x * gridStepSizeX)), (Mathf.FloorToInt(y * gridStepSizeX))).grayscale;
+
+        return sampledFloat;
+    }
+
+    
+
+    public float Perlin(Vector3 worldPosition)
+    {
+        int SampleX = Mathf.FloorToInt(worldPosition.x + perlinImageHeight * .5f);
+        int SampleY = Mathf.FloorToInt(worldPosition.y + perlinImageWidth * .5f);
+
+        SampleX = SampleX % perlinNoiseXAxisGrid;
+        SampleY = SampleY % perlinNoiseYAxisGrid;
+
+        float sampledValue = SampleNoise(SampleX, SampleY);
+
+        return sampledValue;
+
+    }
+
+    public void Grid()
+    {
+        
+    }
+
 
 
 }
