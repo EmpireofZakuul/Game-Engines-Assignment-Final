@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxPiecesOfBuilding: 20
   perlinScale: 10
-  minimumRandom: -5
-  maximumRandom: 10
+  minimumRandom: 0
+  maximumRandom: 5
   buildingBaseParts:
   - {fileID: 3262552414690114224, guid: 03a77e44d092ae04e9f9c02a83ac6083, type: 3}
   - {fileID: 1560901783699407099, guid: 417d399bacd55f4449b57355f0f86a9d, type: 3}

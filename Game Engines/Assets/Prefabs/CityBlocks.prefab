@@ -47,6 +47,6 @@ MonoBehaviour:
   gridYAxis: 4
   _prefabSpawnBuilding: {fileID: 8744518593014878252, guid: a5d72fdcaf00f994e8205dc606a6cbc4, type: 3}
   centerOfTheGrid: {x: 0, y: 0, z: 0}
-  individualBuildingSpacing: 10
+  individualBuildingSpacing: 2.2
   onEnableGenerate: 1
   NavMeshSurface: {fileID: 0}

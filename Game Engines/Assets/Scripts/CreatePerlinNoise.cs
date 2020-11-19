@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CreatePerlinNoise : MonoBehaviour
 {
+  
     [Header("Perlin Noise Image Size")]
     public int perlinImageWidth = 256;
     public int perlinImageHeight = 256;
@@ -21,7 +22,7 @@ public class CreatePerlinNoise : MonoBehaviour
     public GameObject Building;
     public RawImage vis;
     public bool gridVisual = false;
-   public void Start()
+   public void Awake()
     {
 
         if (instance == null)
@@ -45,13 +46,7 @@ public class CreatePerlinNoise : MonoBehaviour
 
     }
 
-    public void Update()
-    {
-        //Renderer renderer = GetComponent<Renderer>();
-        //renderer.material.mainTexture = GeneratePerlinTexture();
-    }
-
-    public  void GeneratePerlinTexture()
+      void GeneratePerlinTexture()
     {
         if (randomizeTexture)
         {
@@ -99,8 +94,8 @@ public class CreatePerlinNoise : MonoBehaviour
 
     public float PerlinImage(Vector3 worldPosition)
     {
-        int SampleX = Mathf.FloorToInt(worldPosition.x + perlinImageHeight * 0.5f);
-        int SampleY = Mathf.FloorToInt(worldPosition.y + perlinImageWidth * 0.5f);
+        int SampleX = Mathf.FloorToInt(worldPosition.x + perlinNoiseXAxisGrid * 0.5f);
+        int SampleY = Mathf.FloorToInt(worldPosition.y + perlinNoiseYAxisGrid * 0.5f);
 
         SampleX = SampleX % perlinNoiseXAxisGrid;
         SampleY = SampleY % perlinNoiseYAxisGrid;

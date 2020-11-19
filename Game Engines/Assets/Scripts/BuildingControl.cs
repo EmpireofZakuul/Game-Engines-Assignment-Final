@@ -1,19 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BuildingControl : MonoBehaviour
 {
     public static BuildingControl instance;
     public List<GameObject> generate = new List<GameObject>();
-    public CreatePerlinNoise perlinNoise;
+    public CreatePerlinNoise perlinNoiseGenerater;
     public Grid gridSpawn;
 
      
     // Start is called before the first frame update
-    void Start()
-    {
-        if (instance == null)
+
+public void Awake()
+{
+      if (instance == null)
         {
             instance = this;
         }
@@ -21,13 +23,15 @@ public class BuildingControl : MonoBehaviour
         {
             Destroy(gameObject);
         }
- 
-    ManagerGenerate();
+}
+    void Start()
+    {
+        ManagerGenerate();
     }
 
     public void ManagerGenerate()
     {
-        perlinNoise.Generate();
+        perlinNoiseGenerater.Generate();
         gridSpawn.GeneratePlay();
     }
 
