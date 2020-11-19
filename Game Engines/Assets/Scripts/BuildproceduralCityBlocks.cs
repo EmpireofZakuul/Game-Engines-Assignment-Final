@@ -22,10 +22,10 @@ public class BuildproceduralCityBlocks : MonoBehaviour
 
     public void CityBuild()
     {
-        //float sampledValue = PerlinNoise.instance.Perlin(transform.position);
+        float sampledValue = CreatePerlinNoise.instance.PerlinImage(transform.position);
 
-        // int Pieces = Mathf.FloorToInt(maxPiecesOfBuilding * (sampledValue));
-        int Pieces = Mathf.FloorToInt(maxPiecesOfBuilding);
+         int Pieces = Mathf.FloorToInt(maxPiecesOfBuilding * (sampledValue));
+        //int Pieces = Mathf.FloorToInt(maxPiecesOfBuilding);
         Pieces += Random.Range(minimumRandom, maximumRandom);
 
         if (Pieces <= 0)

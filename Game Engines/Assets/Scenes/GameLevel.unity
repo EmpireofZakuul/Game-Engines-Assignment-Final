@@ -231,7 +231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &62232525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2599,9 +2599,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perlinImageWidth: 256
   perlinImageHeight: 256
-  offsetOfThePerlinNoiseTexture: {x: 0, y: 0}
+  offsetOfThePerlinNoiseTexture: {x: 10, y: 2}
   randomizeTexture: 1
   scaleOfTheNoise: 1
+  perlinNoiseXAxisGrid: 4
+  perlinNoiseYAxisGrid: 4
+  perlinHeight: 4
+  Building: {fileID: 0}
+  gridVisual: 0
 --- !u!1 &1061351951
 GameObject:
   m_ObjectHideFlags: 0
@@ -4652,6 +4657,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7205538644860140636, guid: 6d3b56c070376af4a9fb8948e901ee01, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1359525377}
     - target: {fileID: 8413794474693910197, guid: 6d3b56c070376af4a9fb8948e901ee01, type: 3}
       propertyPath: Spawner
       value: 

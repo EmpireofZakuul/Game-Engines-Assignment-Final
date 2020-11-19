@@ -18,9 +18,10 @@ public class Grid : MonoBehaviour
     {
        // if (onEnableGenerate)
         //{
-            GeneratePlay();
+           // GeneratePlay();
 
        // }
+       SpawnGridCity();
     }
     void SpawnGridCity()
     {

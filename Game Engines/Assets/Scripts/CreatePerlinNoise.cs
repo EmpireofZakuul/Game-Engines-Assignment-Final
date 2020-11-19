@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CreatePerlinNoise : MonoBehaviour
 {
@@ -14,9 +15,12 @@ public class CreatePerlinNoise : MonoBehaviour
     public float scaleOfTheNoise = 1f;
     public int perlinNoiseXAxisGrid = 4;
     public int perlinNoiseYAxisGrid = 4;
-    public int spaceBetween = 1;
+    public float perlinHeight = 4f;
 
     private Texture2D texture;
+    public GameObject Building;
+    private RawImage vis;
+    public bool gridVisual = false;
    public void Start()
     {
 
@@ -28,17 +32,26 @@ public class CreatePerlinNoise : MonoBehaviour
         {
             Destroy(gameObject);
         }
+ 
+    }
 
-      
+    public void Generate()
+    {
+        GeneratePerlinTexture();
+        if(gridVisual)
+        {
+            GridSpawn();
+        }
+
     }
 
     public void Update()
     {
-        Renderer renderer = GetComponent<Renderer>();
-        renderer.material.mainTexture = GeneratePerlinTexture();
+        //Renderer renderer = GetComponent<Renderer>();
+        //renderer.material.mainTexture = GeneratePerlinTexture();
     }
 
-    public Texture2D GeneratePerlinTexture()
+    public  void GeneratePerlinTexture()
     {
         if (randomizeTexture)
         {
@@ -57,7 +70,7 @@ public class CreatePerlinNoise : MonoBehaviour
 
         texture.Apply();
 
-        return texture;
+        vis.texture = texture;
     }
 
     Color Noise(int x, int y)
@@ -71,36 +84,52 @@ public class CreatePerlinNoise : MonoBehaviour
         return ColorOfThePerlin;
     }
 
-    public float SampleNoise(int x, int y)
+    public float CreateNoise(int x, int y)
     {
         int gridStepSizeX = perlinImageHeight / perlinNoiseXAxisGrid;
         int gridStepSizeY = perlinImageWidth / perlinNoiseYAxisGrid;
 
         float sampledFloat = texture.GetPixel
-                   ((Mathf.FloorToInt(x * gridStepSizeX)), (Mathf.FloorToInt(y * gridStepSizeX))).grayscale;
+        ((Mathf.FloorToInt(x * gridStepSizeX)), (Mathf.FloorToInt(y * gridStepSizeX))).grayscale;
 
         return sampledFloat;
     }
 
     
 
-    public float Perlin(Vector3 worldPosition)
+    public float PerlinImage(Vector3 worldPosition)
     {
-        int SampleX = Mathf.FloorToInt(worldPosition.x + perlinImageHeight * .5f);
-        int SampleY = Mathf.FloorToInt(worldPosition.y + perlinImageWidth * .5f);
+        int SampleX = Mathf.FloorToInt(worldPosition.x + perlinImageHeight * 0.5f);
+        int SampleY = Mathf.FloorToInt(worldPosition.y + perlinImageWidth * 0.5f);
 
         SampleX = SampleX % perlinNoiseXAxisGrid;
         SampleY = SampleY % perlinNoiseYAxisGrid;
 
-        float sampledValue = SampleNoise(SampleX, SampleY);
+        float sampledValue = CreateNoise(SampleX, SampleY);
 
         return sampledValue;
 
     }
 
-    public void Grid()
+    public void GridSpawn()
     {
-        
+        GameObject visual = new GameObject("Visual");
+        visual.transform.SetParent(this.transform);
+//might not need this section
+        for (int x = 0; x < perlinNoiseXAxisGrid; x++)
+        {
+           for (int y = 0; x < perlinNoiseYAxisGrid; y++)
+           {
+               GameObject prefab = Instantiate(Building, new Vector3( x, CreateNoise(x,y) * perlinHeight, y) 
+               +  transform.position, transform.rotation);
+
+               prefab.transform.SetParent(visual.transform);
+
+           } 
+        }
+        // end
+
+        visual.transform.position = new Vector3(-perlinNoiseXAxisGrid * 0.5f, - perlinHeight, perlinNoiseYAxisGrid * 0.5f);
     }
 
 
