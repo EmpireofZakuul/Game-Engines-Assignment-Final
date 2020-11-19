@@ -5,10 +5,10 @@ using UnityEngine;
 public class BuildproceduralCityBlocks : MonoBehaviour
 {
     public int maxPiecesOfBuilding = 20;
-   // public float perlinScale = 2f;
+    public float perlinScale = 2f;
 
-    public int minimumRandom = -5;
-    public int maximumRandom = 10;
+    public int minimumRandom = 0;
+    public int maximumRandom = 5;
     public GameObject[] buildingBaseParts;
     public GameObject[] buildingMiddleParts;
     public GameObject[] buildingTopParts;
@@ -54,7 +54,7 @@ public class BuildproceduralCityBlocks : MonoBehaviour
 
         cloneSpawn.transform.SetParent(this.transform);
     
-        //GeneratedObjectControl.instance.AddObject(cloneSpawn);
+        BuildingControl.instance.Objects(cloneSpawn);
 
         return OffsetHeight;
     }

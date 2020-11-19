@@ -19,7 +19,7 @@ public class CreatePerlinNoise : MonoBehaviour
 
     private Texture2D texture;
     public GameObject Building;
-    private RawImage vis;
+    public RawImage vis;
     public bool gridVisual = false;
    public void Start()
     {

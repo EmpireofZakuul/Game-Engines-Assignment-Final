@@ -16,12 +16,12 @@ public class Grid : MonoBehaviour
 
     void OnEnable()
     {
-       // if (onEnableGenerate)
-        //{
-           // GeneratePlay();
+        if (onEnableGenerate)
+        {
+            GeneratePlay();
 
-       // }
-       SpawnGridCity();
+        }
+       //SpawnGridCity();
     }
     void SpawnGridCity()
     {

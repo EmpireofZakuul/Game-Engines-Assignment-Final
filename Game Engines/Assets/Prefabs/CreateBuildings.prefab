@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPiecesOfBuilding: 20
+  perlinScale: 10
   minimumRandom: -5
   maximumRandom: 10
   buildingBaseParts:
