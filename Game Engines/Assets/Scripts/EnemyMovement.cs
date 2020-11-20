@@ -32,7 +32,8 @@ public class EnemyMovement : MonoBehaviour
         float distance = Vector3.Distance(target.position, transform.position);
         if (distance >= lookRadius)
         {
-            nav.SetDestination(baseLocation);
+           // nav.SetDestination(baseLocation);
+            nav.SetDestination(target.transform.position);
         }
     }
 

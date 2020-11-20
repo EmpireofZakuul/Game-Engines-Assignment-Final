@@ -239,7 +239,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62232524}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5b415c8f90f97540b56af0d7e578fb1, type: 3}
   m_Name: 
@@ -4757,23 +4757,27 @@ PrefabInstance:
       objectReference: {fileID: 62232525}
     - target: {fileID: 8413794475400262908, guid: 6d3b56c070376af4a9fb8948e901ee01, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8413794475400262908, guid: 6d3b56c070376af4a9fb8948e901ee01, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8413794475719235617, guid: 6d3b56c070376af4a9fb8948e901ee01, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1359525376}
+    - target: {fileID: 8413794476331940457, guid: 6d3b56c070376af4a9fb8948e901ee01, type: 3}
+      propertyPath: m_Speed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8413794476331940459, guid: 6d3b56c070376af4a9fb8948e901ee01, type: 3}
       propertyPath: m_Name
       value: GonkDroid2
       objectReference: {fileID: 0}
     - target: {fileID: 8413794476331940459, guid: 6d3b56c070376af4a9fb8948e901ee01, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8413794476331940462, guid: 6d3b56c070376af4a9fb8948e901ee01, type: 3}
       propertyPath: m_LocalPosition.x
