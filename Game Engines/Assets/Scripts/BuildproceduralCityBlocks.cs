@@ -13,6 +13,8 @@ public class BuildproceduralCityBlocks : MonoBehaviour
     public GameObject[] buildingMiddleParts;
     public GameObject[] buildingTopParts;
 
+    public bool spotTaken = false;
+
     void Start()
     {
         CityBuild();
@@ -22,8 +24,8 @@ public class BuildproceduralCityBlocks : MonoBehaviour
 
     public void CityBuild()
     {
+        //sample the perlin noise
         float sampledValue = CreatePerlinNoise.instance.PerlinImage(transform.position);
-          //float sampledValue =   PerlinNoise.instance.Perlin(transform.position);
 
          int Pieces = Mathf.FloorToInt(maxPiecesOfBuilding * (sampledValue));
         Pieces += Random.Range(minimumRandom, maximumRandom);

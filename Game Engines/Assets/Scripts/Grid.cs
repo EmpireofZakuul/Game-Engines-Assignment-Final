@@ -20,8 +20,7 @@ public class Grid : MonoBehaviour
         {
             GeneratePlay();
 
-        }
-       //SpawnGridCity();
+        }   
     }
     void SpawnGridCity()
     {
@@ -34,14 +33,10 @@ public class Grid : MonoBehaviour
                 Prefabclone.transform.SetParent(this.transform);
             }
         }
-
-
     }
     public void GeneratePlay()
     {
         SpawnGridCity();
 
     }
-
-
 }

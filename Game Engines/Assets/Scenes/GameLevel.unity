@@ -1273,7 +1273,7 @@ MonoBehaviour:
   _prefabSpawnBuilding: {fileID: 5804151961830106381, guid: 2f08e515f5a722040aa9cdc88373326b, type: 3}
   centerOfTheGrid: {x: 0, y: 0, z: 0}
   individualBuildingSpacing: 5
-  onEnableGenerate: 0
+  onEnableGenerate: 1
   NavMeshSurface: {fileID: 0}
 --- !u!1 &459229088
 GameObject:

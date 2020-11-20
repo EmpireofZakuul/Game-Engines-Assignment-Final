@@ -39,10 +39,7 @@ public class CreatePerlinNoise : MonoBehaviour
     public void Generate()
     {
         GeneratePerlinTexture();
-        if(gridVisual)
-        {
-            GridSpawn();
-        }
+        
 
     }
 
@@ -106,27 +103,7 @@ public class CreatePerlinNoise : MonoBehaviour
 
     }
 
-    public void GridSpawn()
-    {
-        GameObject visual = new GameObject("Visual");
-        visual.transform.SetParent(this.transform);
-//might not need this section
-        for (int x = 0; x < perlinNoiseXAxisGrid; x++)
-        {
-           for (int y = 0; x < perlinNoiseYAxisGrid; y++)
-           {
-               GameObject prefab = Instantiate(Building, new Vector3( x, CreateNoise(x,y) * perlinHeight, y) 
-               +  transform.position, transform.rotation);
-
-               prefab.transform.SetParent(visual.transform);
-
-           } 
-        }
-        // end
-
-        visual.transform.position = new Vector3(-perlinNoiseXAxisGrid * 0.5f, -perlinHeight, perlinNoiseYAxisGrid * 0.5f);
-    }
-
+    
 
 
 }
