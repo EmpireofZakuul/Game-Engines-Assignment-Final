@@ -124,7 +124,7 @@ public class CreatePerlinNoise : MonoBehaviour
         }
         // end
 
-        visual.transform.position = new Vector3(-perlinNoiseXAxisGrid * 0.5f, - perlinHeight, perlinNoiseYAxisGrid * 0.5f);
+        visual.transform.position = new Vector3(-perlinNoiseXAxisGrid * 0.5f, -perlinHeight, perlinNoiseYAxisGrid * 0.5f);
     }
 
 

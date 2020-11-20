@@ -208,13 +208,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3745457}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.9702746, y: 0, z: 0, w: 0.24200663}
+  m_LocalPosition: {x: -37.3, y: 65.6, z: 64.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 151.99, y: 0, z: 0}
 --- !u!1 &62232524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,8 +1273,8 @@ MonoBehaviour:
   _prefabSpawnBuilding: {fileID: 5804151961830106381, guid: 2f08e515f5a722040aa9cdc88373326b, type: 3}
   centerOfTheGrid: {x: 0, y: 0, z: 0}
   individualBuildingSpacing: 5
-  onEnableGenerate: 1
-  NavMeshSurface: {fileID: 1037221041}
+  onEnableGenerate: 0
+  NavMeshSurface: {fileID: 0}
 --- !u!1 &459229088
 GameObject:
   m_ObjectHideFlags: 0
@@ -2621,7 +2621,7 @@ MonoBehaviour:
   scaleOfTheNoise: 1
   perlinNoiseXAxisGrid: 40
   perlinNoiseYAxisGrid: 40
-  perlinHeight: 20
+  perlinHeight: 1
   Building: {fileID: 0}
   vis: {fileID: 1984789839}
   gridVisual: 0

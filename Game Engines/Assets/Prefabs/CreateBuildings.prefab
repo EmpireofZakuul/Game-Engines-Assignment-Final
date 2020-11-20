@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8744518593014878253}
-  - component: {fileID: 8744518593014878258}
+  - component: {fileID: -2385997532657412932}
   m_Layer: 0
   m_Name: CreateBuildings
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8744518593014878258
+--- !u!114 &-2385997532657412932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,25 +43,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 567be4b3f68e89e4f8ca7625070827af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPiecesOfBuilding: 20
-  perlinScale: 10
+  maxPiecesOfBuilding: 10
+  perlinScale: 0
   minimumRandom: 0
-  maximumRandom: 5
+  maximumRandom: 2
   buildingBaseParts:
-  - {fileID: 3262552414690114224, guid: 03a77e44d092ae04e9f9c02a83ac6083, type: 3}
-  - {fileID: 1560901783699407099, guid: 417d399bacd55f4449b57355f0f86a9d, type: 3}
-  - {fileID: 7761191755928145939, guid: d5929d7716912d9488406cc1614e606f, type: 3}
-  - {fileID: 8063517833098500110, guid: a51931c5d97e69842ac8c397238292a8, type: 3}
-  - {fileID: 8192102110278688272, guid: 5b10e7b729adb554aa19f9199dca0d4a, type: 3}
-  - {fileID: 7377818292763014876, guid: 0d205b638e0e2d044b88707ff5b1bed0, type: 3}
-  - {fileID: 4055033964492500490, guid: 3fab2ad069b1fb742ba850515cf4042e, type: 3}
+  - {fileID: 4317397639215564849, guid: a39b1671a6476bd41a08cb7889ac8290, type: 3}
+  - {fileID: 5050547617228302629, guid: cb67c010d3de8da48b048e11309dba65, type: 3}
+  - {fileID: 8462894626940323682, guid: e9f6acffb3e9ea643b4eddb17feee628, type: 3}
+  - {fileID: 6698375260880712382, guid: bcff0e41378d8414c94df04296e67bb9, type: 3}
+  - {fileID: 2100504292110002311, guid: 1683d4e5f101ace4fb1c6ca8ca76f2a7, type: 3}
+  - {fileID: 9199604796520372300, guid: 4913e11c0fe5cf747977f3ad70529470, type: 3}
+  - {fileID: 7465784999828367725, guid: 7926be4d4c4c0834da4216b5605a80d0, type: 3}
   buildingMiddleParts:
-  - {fileID: 7575872467184815244, guid: d252e7b9b0195964e95f93836f58c71c, type: 3}
-  - {fileID: 2457754155141485864, guid: 63090b1111f0cfa4cbe1c139e35c362d, type: 3}
-  - {fileID: 4826565137767189296, guid: 7b440e20d125913468f23134efbd4221, type: 3}
-  - {fileID: 7697600449441515613, guid: 2ff674af199f97942914a9d4a43f44f3, type: 3}
+  - {fileID: 93824298406025456, guid: b60f7b994f2ea17419ed0f76bfc9f2c4, type: 3}
+  - {fileID: 2204175932541452481, guid: 1e522b1a9317b07448a038c4d3a68469, type: 3}
+  - {fileID: 5860392417780704566, guid: 53e2a1d7dc78abd43974c7e2f691d729, type: 3}
+  - {fileID: 3682957925885445175, guid: f5cb5b49a946c1240a1b0939c43deeaf, type: 3}
   buildingTopParts:
-  - {fileID: 8715250602491174007, guid: 6e1bc9aba2b14db4a954006c8498576c, type: 3}
-  - {fileID: 1480254382740179334, guid: 424f87e4618d0924daf25d49addcaf4e, type: 3}
-  - {fileID: 1379912712566178172, guid: 04f9f48c949b72f4cb8b98dfff92195d, type: 3}
-  - {fileID: 8284265793619500189, guid: 4362a9e1474f7a64c895fd48528b017a, type: 3}
+  - {fileID: 8506325973513133222, guid: 5ccfc45c142ca464c968efc845636b93, type: 3}

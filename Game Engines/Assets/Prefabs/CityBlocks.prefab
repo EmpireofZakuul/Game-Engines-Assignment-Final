@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7010578140882046314}
-  - component: {fileID: 6822991258371688944}
+  - component: {fileID: 3709063756821002879}
   m_Layer: 0
   m_Name: CityBlocks
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6822991258371688944
+--- !u!114 &3709063756821002879
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47,6 +47,6 @@ MonoBehaviour:
   gridYAxis: 4
   _prefabSpawnBuilding: {fileID: 8744518593014878252, guid: a5d72fdcaf00f994e8205dc606a6cbc4, type: 3}
   centerOfTheGrid: {x: 0, y: 0, z: 0}
-  individualBuildingSpacing: 2.2
+  individualBuildingSpacing: 10
   onEnableGenerate: 1
   NavMeshSurface: {fileID: 0}
