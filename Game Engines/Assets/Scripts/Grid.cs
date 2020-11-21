@@ -13,30 +13,29 @@ public class Grid : MonoBehaviour
     public bool onEnableGenerate;
     public GameObject NavMeshSurface;
 
+    public bool[,] grid;
 
-    void OnEnable()
-    {
-        if (onEnableGenerate)
-        {
-            GeneratePlay();
 
-        }   
-    }
-    void SpawnGridCity()
+public void OnEnable()
+{
+    grid = new bool[gridXAxis, gridYAxis];
+    SpawnGridCity();
+}
+  
+   public void SpawnGridCity()
     {
+        
         for (int x = 0; x < gridXAxis; x++)
         {
             for (int z = 0; z < gridYAxis; z++)
             {
+                if(grid[x,z]) continue;
+                grid[x,z] = true;
                 GameObject Prefabclone = Instantiate(_prefabSpawnBuilding,
                     transform.position + centerOfTheGrid + new Vector3(individualBuildingSpacing * x, 0, individualBuildingSpacing * z), transform.rotation);
                 Prefabclone.transform.SetParent(this.transform);
             }
         }
     }
-    public void GeneratePlay()
-    {
-        SpawnGridCity();
-
-    }
+    
 }

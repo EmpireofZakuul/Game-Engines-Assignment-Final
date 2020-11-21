@@ -263,7 +263,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &135282501
 GameObject:
@@ -1268,11 +1268,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4b9fbd709068d64f879e2bcfdce6093, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridXAxis: 4
-  gridYAxis: 4
-  _prefabSpawnBuilding: {fileID: 5804151961830106381, guid: 2f08e515f5a722040aa9cdc88373326b, type: 3}
+  gridXAxis: 25
+  gridYAxis: 20
+  _prefabSpawnBuilding: {fileID: 8744518593014878252, guid: a5d72fdcaf00f994e8205dc606a6cbc4, type: 3}
   centerOfTheGrid: {x: 0, y: 0, z: 0}
-  individualBuildingSpacing: 5
+  individualBuildingSpacing: 7
   onEnableGenerate: 1
   NavMeshSurface: {fileID: 0}
 --- !u!1 &459229088
@@ -3353,7 +3353,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391201309}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.86, z: 415}
+  m_LocalPosition: {x: 0, y: 1.86, z: 134.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1009898362}
@@ -4809,7 +4809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8413794476331940462, guid: 6d3b56c070376af4a9fb8948e901ee01, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8413794476331940462, guid: 6d3b56c070376af4a9fb8948e901ee01, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

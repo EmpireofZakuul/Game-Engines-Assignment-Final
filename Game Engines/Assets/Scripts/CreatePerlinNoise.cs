@@ -36,6 +36,11 @@ public class CreatePerlinNoise : MonoBehaviour
  
     }
 
+    public void Start()
+    {
+        Generate();
+    }
+
     public void Generate()
     {
         GeneratePerlinTexture();

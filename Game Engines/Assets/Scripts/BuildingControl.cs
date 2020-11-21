@@ -31,8 +31,8 @@ public void Awake()
 
     public void ManagerGenerate()
     {
-        perlinNoiseGenerater.Generate();
-        gridSpawn.GeneratePlay();
+       // perlinNoiseGenerater.Generate();
+        //gridSpawn.SpawnGridCity();
     }
 
     public void Objects(GameObject ObjectsAdd)

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BuildproceduralCityBlocks : MonoBehaviour
 {
+  
     public int maxPiecesOfBuilding = 20;
     public float perlinScale = 2f;
 
