@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
+    [Header("Player Movement")]
     public static Vector3 positionOfPlayer;//stores the information about the character 
 
     public CharacterController playerController;
@@ -17,10 +18,15 @@ public class CharacterMovement : MonoBehaviour
     public bool grounded;
 
     public float jumpHeight = 3f;
+[Header("Player Health")]
+    public int maxHealth = 100;
+    public int health;
+    public PlayerHealthBar PlayerHealthBar;
     // Start is called before the first frame update
     void Start()
     {
-
+        health = maxHealth;
+        PlayerHealthBar.setMaxHealth(maxHealth);
     }
 
     // Update is called once per frame
@@ -44,5 +50,20 @@ public class CharacterMovement : MonoBehaviour
         }
         velocity.y += gravity * Time.deltaTime;
         playerController.Move(velocity * Time.deltaTime);
+
+        if(Input.GetKeyDown(KeyCode.Z))
+        {
+            TakeDamageCharacter(20);
+        }
+
+        
+    }
+
+     public void TakeDamageCharacter(int damage)
+    {
+
+        health -= damage;
+        PlayerHealthBar.SetHealth(health);
+
     }
 }
