@@ -241,7 +241,7 @@ MonoBehaviour:
   dead: 0
   maxHealth: 100
   health: 0
-  EnemyHealthBar: {fileID: 8413794474786760844}
+  EnemyHealthBar: {fileID: 3158250198015183553}
 --- !u!1 &8413794474786760846
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,8 +251,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8413794474786760847}
-  - component: {fileID: 8413794474786760845}
-  - component: {fileID: 8413794474786760844}
+  - component: {fileID: 473171742257845942}
+  - component: {fileID: 3158250198015183553}
   m_Layer: 5
   m_Name: HealthBarBorder
   m_TagString: Untagged
@@ -281,7 +281,7 @@ RectTransform:
   m_AnchoredPosition: {x: -13.09, y: -137.2}
   m_SizeDelta: {x: 1177.6813, y: 93.57138}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8413794474786760845
+--- !u!114 &473171742257845942
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -323,7 +323,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 8413794475400262908}
   m_HandleRect: {fileID: 0}
-  m_Direction: 0
+  m_Direction: 1
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8413794474786760844
+--- !u!114 &3158250198015183553
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -343,36 +343,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d9652c595004a94b9ab1967b9d6179b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSlider: {fileID: 8413794474786760845}
+  healthSlider: {fileID: 473171742257845942}
   gradient:
     serializedVersion: 2
-    key0: {r: 0.797329, g: 0.6287825, b: 0.8490566, a: 1}
-    key1: {r: 0.7355558, g: 0.54509807, b: 1, a: 1}
-    key2: {r: 0.586988, g: 0, b: 1, a: 1}
-    key3: {r: 0.02666688, g: 1, b: 0, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 13107
-    ctime1: 40285
-    ctime2: 65535
-    ctime3: 65535
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
     ctime4: 0
     ctime5: 0
     ctime6: 0
     ctime7: 0
     atime0: 0
-    atime1: 30262
-    atime2: 65535
+    atime1: 65535
+    atime2: 0
     atime3: 0
     atime4: 0
     atime5: 0
     atime6: 0
     atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 3
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
   fill: {fileID: 8413794475400262910}
 --- !u!1 &8413794474869293385
 GameObject:
@@ -600,7 +600,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.9199829, y: 0}
+  m_AnchoredPosition: {x: -0.92004395, y: 0}
   m_SizeDelta: {x: -1.8477783, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8413794475400262911
@@ -624,15 +624,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5514413, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98ef7759d58768245874cfeadab028cb, type: 3}
-  m_Type: 3
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
