@@ -29,8 +29,9 @@ public class EnemyMovement : MonoBehaviour
         nav.GetComponent<NavMeshAgent>();
         originalSpeed = maxSpeed;
 
-        Renderer r = enemeyColour.GetComponent<Renderer>();
-        r.material.SetColor("_EmissionColor", Color.HSVToRGB(1f, 1f, 1f) * intensity);
+       Renderer r = enemeyColour.GetComponent<Renderer>();
+        //r.material.SetColor("_EmissionColor", Color.HSVToRGB(1f, 1f, 1f) * intensity);
+        r.material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
     }
 
     // Update is called once per frame
