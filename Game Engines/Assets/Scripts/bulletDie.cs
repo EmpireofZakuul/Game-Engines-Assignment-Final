@@ -33,7 +33,7 @@ public class bulletDie : MonoBehaviour
         
         
             
-        
+        Destroy(this.gameObject, 0.1f);
         
 
     }

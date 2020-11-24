@@ -15,6 +15,10 @@ public class EnemyMovement : MonoBehaviour
     public float originalSpeed = 5;
     public static float maxSpeed;
     public float speed = 20;
+    //public GameObject enemeyColour;
+      public float intensity;
+
+      public GameObject enemeyColour;
 
     public Vector3 baseLocation;
     // Start is called before the first frame update
@@ -24,6 +28,9 @@ public class EnemyMovement : MonoBehaviour
         target = PlayerManager.instance.player.transform;
         nav.GetComponent<NavMeshAgent>();
         originalSpeed = maxSpeed;
+
+        Renderer r = enemeyColour.GetComponent<Renderer>();
+        r.material.SetColor("_EmissionColor", Color.HSVToRGB(1f, 1f, 1f) * intensity);
     }
 
     // Update is called once per frame

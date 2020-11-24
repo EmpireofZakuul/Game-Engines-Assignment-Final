@@ -11,6 +11,7 @@ public class EnemyExplode : MonoBehaviour
     public AudioSource source;
     public AudioClip[] clipsAudio;
     public GameObject theObjectToBeUnParented;
+    public GameObject destroy;
     public bool dead = false;
     [Header("Enemy Health")]
     public int maxHealth = 100;
@@ -27,8 +28,8 @@ public class EnemyExplode : MonoBehaviour
         //enemyHealth = GetComponentInParent<EnemyHealth>();
         source = GetComponent<AudioSource>();
         
-        source.clip = clipsAudio[0];
-        source.Play();
+       // source.clip = clipsAudio[0];
+        //source.Play();
     }
 
     // Update is called once per frame
@@ -48,13 +49,13 @@ public class EnemyExplode : MonoBehaviour
         theObjectToBeUnParented.transform.SetParent(null);
         Destroy(theObjectToBeUnParented, 1f);
         yield return new WaitForSeconds(2);
-        source.clip = clipsAudio[1];
+        source.clip = clipsAudio[0];
         source.Play();
         yield return new WaitForSeconds(2);
-        source.clip = clipsAudio[2];
+        source.clip = clipsAudio[1];
         source.Play();
         Instantiate(effect, transform.position, transform.rotation);
-        Destroy(gameObject, 0.9f);
+        Destroy(destroy, 0.9f);
 
        
 
@@ -62,7 +63,11 @@ public class EnemyExplode : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        TakeDamage(20);
+        if(other.gameObject.tag == "Bull")
+        {
+            TakeDamage(20);
+        }
+        
     }
 
     public void TakeDamage(int damage)
