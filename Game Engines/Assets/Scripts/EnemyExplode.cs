@@ -6,8 +6,7 @@ public class EnemyExplode : MonoBehaviour
 {
    [Header("Enemy Explode")]
     public Transform effect;
-   public Spawner Spawner;
-    public bool explode = false;
+         public bool explode = false;
     public AudioSource source;
     public AudioClip[] clipsAudio;
     public GameObject theObjectToBeUnParented;
@@ -17,6 +16,10 @@ public class EnemyExplode : MonoBehaviour
     public int maxHealth = 100;
     public int health;
     public EnemyHealthBar EnemyHealthBar;
+
+    [SerializeField]  
+     private Spawner Spawner;
+
 
     // Start is called before the first frame update
     void OnEnable()
@@ -30,6 +33,7 @@ public class EnemyExplode : MonoBehaviour
         
        // source.clip = clipsAudio[0];
         //source.Play();
+        GameObject.Find("Spawner").GetComponents<Spawner>();
     }
 
     // Update is called once per frame
@@ -41,6 +45,9 @@ public class EnemyExplode : MonoBehaviour
             StartCoroutine(ExampleCoroutine());
             explode = true;
             Spawner.count--;
+           //Spawner.GetComponents<Spawner>()
+            //GameObject.Find("Spawner").GetComponents<Spawner>();
+            
         }
     }
 

@@ -4,6 +4,8 @@
     {
         _MainTex ("Texture", 2D) = "white" {}
         _GreyScaleValue("GreyScale Scale", float) = 0.0
+         _Contrast("Contrast", float) = 0.0
+          //_Stage("Transition Stage", float) = 0.0
     }
     SubShader
     {
@@ -40,14 +42,16 @@
 
             sampler2D _MainTex;
             float _GreyScaleValue;
+            float _Contrast;
+            //float _Stage;
 
             fixed4 frag (v2f i) : SV_Target
             {
                 fixed4 col = tex2D(_MainTex, i.uv);
-                float4 c = float4(_GreyScaleValue,_GreyScaleValue,_GreyScaleValue,1);
-            col *= c;
-                //col.rgb = ( col.t)
+                //fixed4 c = col;
+                col.rgb = ( col.r + col.g + col.b / _GreyScaleValue) * _Contrast;
                 return col;
+                //return col + (c * _Stage);
             }
             ENDCG
         }

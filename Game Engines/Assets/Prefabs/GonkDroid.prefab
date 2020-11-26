@@ -260,7 +260,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: {fileID: 2978547037469180398, guid: 57ccc2309fb7a264e8bcf18cf1df1c6f, type: 3}
-  Spawner: {fileID: 0}
   explode: 0
   source: {fileID: 7605192809051671404}
   clipsAudio:
@@ -272,6 +271,7 @@ MonoBehaviour:
   maxHealth: 100
   health: 0
   EnemyHealthBar: {fileID: 7605192807918291599}
+  Spawner: {fileID: 0}
 --- !u!65 &7605192808880831160
 BoxCollider:
   m_ObjectHideFlags: 0

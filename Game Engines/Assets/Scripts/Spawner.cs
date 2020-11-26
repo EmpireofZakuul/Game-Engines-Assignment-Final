@@ -61,6 +61,11 @@ public class Spawner : MonoBehaviour
         }
     }
 
+    public void MinusCount()
+    {
+        count --;
+    }
+
         
     
 }
