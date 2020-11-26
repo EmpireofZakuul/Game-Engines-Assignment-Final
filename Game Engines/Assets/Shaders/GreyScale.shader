@@ -3,10 +3,11 @@
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
+        _GreyScaleValue("GreyScale Scale", float) = 0.0
     }
     SubShader
     {
-        // No culling or depth
+       
         Cull Off ZWrite Off ZTest Always
 
         Pass
@@ -38,12 +39,13 @@
             }
 
             sampler2D _MainTex;
+            float _GreyScaleValue;
 
             fixed4 frag (v2f i) : SV_Target
             {
                 fixed4 col = tex2D(_MainTex, i.uv);
-                // just invert the colors
-                col.rgb = 1 - col.rgb;
+                float4 c = float4(_GreyScaleValue,_GreyScaleValue,_GreyScaleValue,1);
+            col *= c;
                 //col.rgb = ( col.t)
                 return col;
             }
