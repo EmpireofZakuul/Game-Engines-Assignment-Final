@@ -188,7 +188,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -271,7 +271,7 @@ MonoBehaviour:
   maxHealth: 100
   health: 0
   EnemyHealthBar: {fileID: 7605192807918291599}
-  Spawner: {fileID: 0}
+  Spawner: {fileID: 271170048332012580, guid: 0c8c8145f427b874e9436ee2cc549b7e, type: 3}
 --- !u!65 &7605192808880831160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -417,7 +417,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

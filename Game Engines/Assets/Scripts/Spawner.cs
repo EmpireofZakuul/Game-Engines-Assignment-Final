@@ -9,63 +9,51 @@ public class Spawner : MonoBehaviour
     public int enemyAmoundMax = 10;
     public TextMeshProUGUI Enemys;
     public  int count = 0;
+    public  int totalcount = 0;
     public GameObject enemyPrefab;
     public GameObject[] spawnPoints;
     private GameObject currentPoint;
     private int EnemyIndex;
-
-
+    public bool isFound;
+public bool spawning =  true;
    public void SpawnEnemy()
    {
+       if(count < enemyAmoundMax && spawning == true)
+        {
+        
         spawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint");
         EnemyIndex = Random.Range(0, spawnPoints.Length);
         currentPoint = spawnPoints[EnemyIndex];
         enemyPrefab = Instantiate(enemyPrefab, currentPoint.transform.position, currentPoint.transform.rotation) as GameObject;
         enemyPrefab.transform.parent = gameObject.transform;
+        count ++;
+        totalcount++;
+        }return;
 
    }
-    // Start is called before the first frame update
-    void Start()
+    public  void OnEnable()
     {
-
-
-
+        //StartCoroutine(SpawnCoroutine());
+        InvokeRepeating("SpawnEnemy", 2f,2f);
     }
+
     public void Update()
     {
         Enemys.SetText(count.ToString());
-    }
-
-    void OnEnable()
-    {
-        StartCoroutine(SpawnCoroutine());
-    }
-
-    System.Collections.IEnumerator SpawnCoroutine()
-    {
-        while (true)
-        {
-            SpawnEnemy();
-
+        //if(count < enemyAmoundMax && spawning == true)
+       // {
+             
             
-            count ++;
-
-           // GameObject[] Enemy =
-               // GameObject.FindGameObjectsWithTag("Enemy");
-            //if (Enemy.Length == enemyAmoundMax)
-                if (count == enemyAmoundMax)
-                {
-                break;
-                }
-            yield return new WaitForSeconds(1.0f / (float)spawnRateEnemies);
+        //}
+        if(totalcount == 20)
+        {
+            spawning = false;
+              //CancelInvoke();
         }
+
+     
     }
 
-    public void MinusCount()
-    {
-        count --;
-    }
-
-        
+   
     
 }

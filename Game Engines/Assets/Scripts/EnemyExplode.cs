@@ -17,8 +17,8 @@ public class EnemyExplode : MonoBehaviour
     public int health;
     public EnemyHealthBar EnemyHealthBar;
 
-    [SerializeField]  
-     private Spawner Spawner;
+    //[SerializeField]  
+     public Spawner Spawner;
 
 
     // Start is called before the first frame update
@@ -34,6 +34,8 @@ public class EnemyExplode : MonoBehaviour
        // source.clip = clipsAudio[0];
         //source.Play();
         GameObject.Find("Spawner").GetComponents<Spawner>();
+        Spawner = FindObjectOfType<Spawner>();
+        Spawner.isFound = true;
     }
 
     // Update is called once per frame
