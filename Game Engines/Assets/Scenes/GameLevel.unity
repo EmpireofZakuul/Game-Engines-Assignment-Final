@@ -3930,7 +3930,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359525374}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5631f005f9617b04c8fc60e769aececc, type: 3}
   m_Name: 
@@ -4004,6 +4004,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a4abbdf4085b5647a6efaca6e382b78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ascript: {fileID: 1359525381}
+  characterDie: {fileID: 1391201309}
   playerController: {fileID: 1391201310}
   characterSpeed: 12
   gravity: -19.62
