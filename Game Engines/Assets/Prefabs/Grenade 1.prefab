@@ -199,7 +199,7 @@ MonoBehaviour:
   radiusExplosion: 16
   forceOfExplosion: 20
   delay: 3
-  damage: 1
+  damage: 30
   explosionEffect: {fileID: 2978547037469180398, guid: 57ccc2309fb7a264e8bcf18cf1df1c6f, type: 3}
   explosionEffect2: {fileID: 6229149554167398936, guid: ba2a94304796ad64e9dc54d79b3640a6, type: 3}
   source: {fileID: 2119909952}

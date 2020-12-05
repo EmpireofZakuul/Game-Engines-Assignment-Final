@@ -25,7 +25,7 @@ public class CharacterMovement : MonoBehaviour
     public int maxHealth = 100;
     public int health;
     public PlayerHealthBar PlayerHealthBar;
-
+  public bool isFound;
     
 
     // Start is called before the first frame update

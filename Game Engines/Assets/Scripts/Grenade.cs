@@ -10,7 +10,7 @@ public class Grenade : MonoBehaviour
     private float countdown;
     bool grenadeExploded = false;
     public static int BulletDamage;
-    public int damage = 1;
+    public int damage = 30;
     public Transform explosionEffect;
     public Transform explosionEffect2;
     public AudioSource source;
@@ -42,16 +42,16 @@ public class Grenade : MonoBehaviour
         source.Play();
         Instantiate(explosionEffect, transform.position, transform.rotation);
         Instantiate(explosionEffect2, transform.position, transform.rotation);
-        //Collider[] coll = Physics.OverlapSphere(transform.position, radiusExplosion);
+        Collider[] coll = Physics.OverlapSphere(transform.position, radiusExplosion);
 
-        //  for (int i = 0; i < coll.Length; i++)
-        // {
-        // if (coll[i].gameObject.GetComponent<EnemyHealth>())
-        // {
-        // coll[i].gameObject.GetComponent<EnemyHealth>().TakeDamage2(damage);
+          for (int i = 0; i < coll.Length; i++)
+         {
+         if (coll[i].gameObject.GetComponent<EnemyExplode>())
+         {
+        coll[i].gameObject.GetComponent<EnemyExplode>().TakeDamage(damage);
         //coll[i].gameObject.GetComponent<Rigidbody>().AddExplosionForce(forceOfExplosion, transform.position, radiusExplosion);
-        // }
-        // }
+        }
+         }
 
         Debug.Log("boom");
         Destroy(gameObject, 1f);

@@ -38,6 +38,10 @@ public class EnemyExplode : MonoBehaviour
         GameObject.Find("Spawner").GetComponents<Spawner>();
         Spawner = FindObjectOfType<Spawner>();
         Spawner.isFound = true;
+
+        //GameObject.Find("character").GetComponents<CharacterMovement>();
+       //character = FindObjectOfType<CharacterMovement>();
+       // character.isFound = true;
     }
 
     // Update is called once per frame
