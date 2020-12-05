@@ -19,6 +19,8 @@ public class EnemyExplode : MonoBehaviour
 
     //[SerializeField]  
      public Spawner Spawner;
+     public float BlowRadius = 6f;
+     public CharacterMovement character;
 
 
     // Start is called before the first frame update
@@ -51,6 +53,7 @@ public class EnemyExplode : MonoBehaviour
             //GameObject.Find("Spawner").GetComponents<Spawner>();
             
         }
+  
     }
 
     IEnumerator ExampleCoroutine()
@@ -64,6 +67,7 @@ public class EnemyExplode : MonoBehaviour
         source.clip = clipsAudio[1];
         source.Play();
         Instantiate(effect, transform.position, transform.rotation);
+        Explode();
         Destroy(destroy, 0.9f);
 
        
@@ -76,6 +80,7 @@ public class EnemyExplode : MonoBehaviour
         {
             TakeDamage(20);
         }
+
         
     }
 
@@ -85,5 +90,25 @@ public class EnemyExplode : MonoBehaviour
         health -= damage;
         EnemyHealthBar.SetHealth(health);
 
+    }
+      public void Explode()
+    {
+
+      
+            Collider[] coll = Physics.OverlapSphere(transform.position, BlowRadius);
+
+            for (int i = 0; i < coll.Length; i++)
+            {
+                if (coll[i].gameObject.GetComponent<CharacterMovement>())
+                {
+                    //coll[i].gameObject.GetComponent<PlayerHealth>().health -= damage;
+                    character.TakeDamageCharacter(15);
+                   // coll[i].gameObject.GetComponent<Rigidbody>().AddExplosionForce(expolsiveForce, transform.position, BlowRadius);
+                }
+            }
+          
+          
+        
+        
     }
 }

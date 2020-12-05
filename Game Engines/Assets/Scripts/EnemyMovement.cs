@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour
 {
     [Header("Enemy Movement")]
     public float lookRadius = 20f;
+     public float stopRadius = 6f;
     public NavMeshAgent nav;
     Transform target;
     private GameObject player;
@@ -19,8 +20,10 @@ public class EnemyMovement : MonoBehaviour
       public float intensity;
 
       public GameObject enemeyColour;
+      public EnemyExplode explode;
 
     public Vector3 baseLocation;
+       public bool Explodeenemy = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +45,14 @@ public class EnemyMovement : MonoBehaviour
         {
            // nav.SetDestination(baseLocation);
             nav.SetDestination(target.transform.position);
+        }
+
+        if (distance <= stopRadius && !Explodeenemy)
+        {
+            //stopAgent();
+            // Shooting();
+        Explodeenemy = true;
+           //explode.ExampleCoroutine();
         }
     }
 
