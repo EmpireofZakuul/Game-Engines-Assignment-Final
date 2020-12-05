@@ -18,11 +18,21 @@ public class TurningGreyScaleOnOff : MonoBehaviour
        
          if (greyed)
             {
-                ascript.enabled = false;
+                NotgreyedView();
             }
             else
             {
-                 ascript.enabled = true;
+                 greyedView();
             }
+    }
+    public void greyedView()
+    {
+        ascript.enabled = true;
+        greyed = true;
+    }
+     public void NotgreyedView()
+    {
+        ascript.enabled = false;
+         greyed = false;
     }
 }
