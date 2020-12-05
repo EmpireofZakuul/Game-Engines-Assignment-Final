@@ -9,7 +9,7 @@ public class EnemyExplode : MonoBehaviour
          public bool explode = false;
     public AudioSource source;
     public AudioClip[] clipsAudio;
-    public GameObject theObjectToBeUnParented;
+    //public GameObject theObjectToBeUnParented;
     public GameObject destroy;
     public bool dead = false;
     [Header("Enemy Health")]
@@ -39,9 +39,9 @@ public class EnemyExplode : MonoBehaviour
         Spawner = FindObjectOfType<Spawner>();
         Spawner.isFound = true;
 
-        //GameObject.Find("character").GetComponents<CharacterMovement>();
+       // GameObject.Find("character").GetComponents<CharacterMovement>();
        //character = FindObjectOfType<CharacterMovement>();
-       // character.isFound = true;
+        //character.isFound = true;
     }
 
     // Update is called once per frame
@@ -62,9 +62,9 @@ public class EnemyExplode : MonoBehaviour
 
     IEnumerator ExampleCoroutine()
     {
-        theObjectToBeUnParented.transform.SetParent(null);
-        Destroy(theObjectToBeUnParented, 1f);
-        yield return new WaitForSeconds(2);
+        //theObjectToBeUnParented.transform.SetParent(null);
+        //Destroy(theObjectToBeUnParented, 1f);
+        //yield return new WaitForSeconds(2);
         source.clip = clipsAudio[0];
         source.Play();
         yield return new WaitForSeconds(2);
