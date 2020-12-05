@@ -16,14 +16,7 @@ public class TurningGreyScaleOnOff : MonoBehaviour
     void Update()
     {
        
-         if (greyed)
-            {
-                NotgreyedView();
-            }
-            else
-            {
-                 greyedView();
-            }
+        
     }
     public void greyedView()
     {
