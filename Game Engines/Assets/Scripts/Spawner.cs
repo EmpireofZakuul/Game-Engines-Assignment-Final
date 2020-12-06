@@ -52,7 +52,7 @@ public bool spawning =  true;
               //CancelInvoke();
         }
 
-    	if(count == 0)
+    	if(count == 0 &&  !spawning )
         {
             SceneManager.LoadScene("Win");
         }

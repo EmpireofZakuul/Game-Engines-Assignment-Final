@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Return : MonoBehaviour
 {
+   
+   public void Start()
+   {
+       Cursor.lockState = CursorLockMode.None;
+   }
+   
     public void QuitGameMenu()
     {
 
