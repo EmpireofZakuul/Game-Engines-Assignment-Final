@@ -20,7 +20,7 @@ public class EnemyExplode : MonoBehaviour
     //[SerializeField]  
      public Spawner Spawner;
      public float BlowRadius = 6f;
-     public CharacterMovement character;
+     private CharacterMovement character;
 
 
     // Start is called before the first frame update
@@ -39,9 +39,9 @@ public class EnemyExplode : MonoBehaviour
         Spawner = FindObjectOfType<Spawner>();
         Spawner.isFound = true;
 
-       // GameObject.Find("character").GetComponents<CharacterMovement>();
-       //character = FindObjectOfType<CharacterMovement>();
-        //character.isFound = true;
+        GameObject.Find("Character").GetComponents<CharacterMovement>();
+       character = FindObjectOfType<CharacterMovement>();
+        character.isFound = true;
     }
 
     // Update is called once per frame
