@@ -375,11 +375,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 559532800}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37d1ae1c5324f4e4093247f2fb90222d, type: 3}
+  m_Script: {fileID: 11500000, guid: 54c3194128cc68e4a8940a3f7b8ca789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Paused: 0
-  PauseMenuUI: {fileID: 1007374984}
 --- !u!4 &559532802
 Transform:
   m_ObjectHideFlags: 0
@@ -936,7 +934,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 559532801}
-        m_TargetAssemblyTypeName: PauseGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: Return, Assembly-CSharp
         m_MethodName: QuitGameMenu
         m_Mode: 1
         m_Arguments:
