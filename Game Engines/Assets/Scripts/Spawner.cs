@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Spawner : MonoBehaviour
@@ -51,8 +52,15 @@ public bool spawning =  true;
               //CancelInvoke();
         }
 
+    	if(count == 0)
+        {
+            
+        }
+
+
+
      
-    }
+     }
 
    
     
