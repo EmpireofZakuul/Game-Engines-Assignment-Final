@@ -54,7 +54,7 @@ public bool spawning =  true;
 
     	if(count == 0)
         {
-            
+            SceneManager.LoadScene("Win");
         }
 
 
