@@ -265,7 +265,6 @@ MonoBehaviour:
   clipsAudio:
   - {fileID: 8300000, guid: 76604f2fc03c51d44bd3d15516849043, type: 3}
   - {fileID: 8300000, guid: 92ebaf923499d364f87aeace6a7b0a1c, type: 3}
-  theObjectToBeUnParented: {fileID: 7298781666110564353}
   destroy: {fileID: 7605192808005611497}
   dead: 0
   maxHealth: 100
@@ -273,7 +272,6 @@ MonoBehaviour:
   EnemyHealthBar: {fileID: 7605192807918291599}
   Spawner: {fileID: 271170048332012580, guid: 0c8c8145f427b874e9436ee2cc549b7e, type: 3}
   BlowRadius: 6
-  character: {fileID: 0}
 --- !u!65 &7605192808880831160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -332,8 +330,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.74
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 6
+  m_Acceleration: 15
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
