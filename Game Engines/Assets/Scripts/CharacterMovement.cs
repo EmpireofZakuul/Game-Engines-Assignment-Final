@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CharacterMovement : MonoBehaviour
 {
-     public grey ascript;
+    // public grey ascript;
      public GameObject characterDie;
     [Header("Player Movement")]
     public static Vector3 positionOfPlayer;//stores the information about the character 
@@ -57,14 +57,14 @@ public class CharacterMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         playerController.Move(velocity * Time.deltaTime);
 
-        if(Input.GetKeyDown(KeyCode.Z))
-        {
-            TakeDamageCharacter(15);
-        }
-        if(health <=20)
-        {
-          ascript.enabled = true;
-        }
+        //if(Input.GetKeyDown(KeyCode.Z))
+       // {
+           // TakeDamageCharacter(15);
+        //}
+       // if(health <=20)
+        //{
+         // ascript.enabled = true;
+       // }
         if(health <= 0)
         {
             //Destroy(characterDie,2f);
