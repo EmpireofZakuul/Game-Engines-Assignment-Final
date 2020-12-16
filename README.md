@@ -1,13 +1,4 @@
-<!DOCTYPE html>
 <html>
-<head>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-</style>
-</head>
 <body>
 Game-Engines-Assignment
 <p><b>Name:</b>Marcus Gleeson<br>
@@ -22,7 +13,14 @@ This game is a 3D first person shooter that is based in a percedural generated c
 </P>
 <h1>Instructions for use</h1
 <p>
-Upon starting the game, you will be greeted with the main menu. From there you can choose to play the game in colour or greyscale. When you press the start button, you will take control of a first person character.
+Upon starting the game, you will be greeted with the main menu.
+There will be three tabs at the top, <b>Start</b>, <b>How To Play</b> and <b>Quit</b>.
+<ol>
+  <li><b>Start:</b> From this tab you can choose to play the game in colour or greyscale. There is also the Start button to Start the game.</li>
+  <li><b>How To Play:</b> This tab allows you the view the controls of the game.</li>
+  <li><b>Quit:</b> This tab allows the player to quit the game</li>
+</ol>
+
 <h3>Character Controls</h3>
 <p>
 <table>
@@ -47,7 +45,7 @@ Upon starting the game, you will be greeted with the main menu. From there you c
     <td><b>The Right Mouse Button</b></td>
   </tr>
   <tr>
-    <td>To Exit To Menu</td>
+    <td>To Bring Up The Menu</td>
     <td><b>The Escape Key</b></td>
   </tr>
  
