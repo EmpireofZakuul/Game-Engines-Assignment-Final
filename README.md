@@ -14,31 +14,26 @@ This game is a 3D first person shooter that is based in a percedural generated c
 Upon starting the game,you will be greeted with the main menu, from there you can choose to play the game in colour or greyscale.When you press the start button, you will take control of a first person character.
 <h3>Character Controls</h3>
 <p>
-<b>To move the character in the game, The W,A,S,D keys are used.</b>
-<b>The left mouse button is used to shoot the characters weapon.</b>
-<b>The charcater has the use of 5 grenades in the game, to throw a grenande the right mouse button is used.</b>
-<h2>HTML Table</h2>
-
 <table>
   <tr>
-    <th>task</th>
-    <th>Control</th>
+    <th><b>Task</b></th>
+    <th><b>Controls</b></th>
     
   </tr>
   <tr>
     <td>To Move The Character In The Game</td>
-    <td>The W,A,S,D Keys</td>
+    <td><b>The W,A,S,D Keys</b></td>
   </tr>
   <tr>
     <td>To Make The Character Jump</td>
     <td>The Space Bar</td>
   </tr>
   <tr>
-    <td>Shoot The Characters Weapon</td>
+    <td>To Shoot The Characters Weapon</td>
     <td>The Left Mouse Button</td>
   </tr>
   <tr>
-    <td>To Throw Grenade</td>
+    <td>To Throw Grenades</td>
     <td>The Right Mouse Button</td>
   </tr>
  
