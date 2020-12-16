@@ -7,12 +7,18 @@
 
 <h1>Description of the project</h1
 <p>
+This game is a 3D first person shooter that is based in a percedural generated city.
 </P>
 <h1>Instructions for use</h1
 <p>
+Upon starting the game,you will be greeted with the main menu, from there you can choose to play the game in colour or greyscale.When you press the start button, you will take control of a first person character.
+<b>
+<h3>Character Controls</h3>
+</b>
 </P>
 <h1>How it works</h1
 <p>
+Upon starting the game,you will be greeted with the main menu, from there you can choose to play the game in colour or greyscale.
 </P>
 <h1>References</h1>
 <p>
