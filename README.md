@@ -1,6 +1,5 @@
 <html>
 <body>
-Game-Engines-Assignment
 <p><b>Name:</b>Marcus Gleeson<br>
 <b>Student Number:</b>D19124543<br>
 <b>Class Group:</b>DT508
@@ -61,6 +60,12 @@ Upon starting the game,you will be greeted with the main menu, from there you ca
 </P>
 <h1>What I am most proud of in the assignment</h1>
 <p>
+If I was to choose what I was most proud of in the assignment, It would be very difficult to choose one, so I have choosen my top three.
+<ol>
+  <li><b>The GreyScale shader</b></li>
+  <li><b>Percedural city</b></li>
+  <li><b>Building Assets</b></li>
+</ol>
 </P>
 <h1>Game Proposal</h1>
 <p>For my Game Engines Assignment, I will be doing a procedurally generated city shooter game. This city will feature procedurally generated buildings of different heights that the player can roam around.</p>
