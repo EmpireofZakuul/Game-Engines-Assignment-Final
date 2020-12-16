@@ -5,7 +5,7 @@
 </P>
 <p>This was a new unity project that I started at the start of reading week, all modeles and assets are assets that I have created myself</p>
 
-<h1>Description of the project</h1
+<h1>Description of the project</h1>
 <p>
 This game is a 3D first person shooter that is based in a percedural generated city.
 </P>
@@ -14,9 +14,48 @@ This game is a 3D first person shooter that is based in a percedural generated c
 Upon starting the game,you will be greeted with the main menu, from there you can choose to play the game in colour or greyscale.When you press the start button, you will take control of a first person character.
 <h3>Character Controls</h3>
 <p>
-<b>To move the character in the game, The W,A,S,D keys are used</b>
-<b>The left mouse button is used to shoot the characters weapon</b>
-<b>The charcater has the use of 5 grenades in the game, to throw a grenande use the right mouse button</b>
+<b>To move the character in the game, The W,A,S,D keys are used.</b>
+<b>The left mouse button is used to shoot the characters weapon.</b>
+<b>The charcater has the use of 5 grenades in the game, to throw a grenande the right mouse button is used.</b>
+<h2>HTML Table</h2>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
 </p>
 </P>
 <h1>How it works</h1
