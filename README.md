@@ -1,8 +1,15 @@
+<!DOCTYPE html>
 <html>
 <head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
 </head>
 <body>
-# Game-Engines-Assignment
+Game-Engines-Assignment
 <p><b>Name:</b>Marcus Gleeson<br>
 <b>Student Number:</b>D19124543<br>
 <b>Class Group:</b>DT508
