@@ -16,9 +16,9 @@ This game is a 3D first person shooter that is based in a percedural generated c
 Upon starting the game, you will be greeted with the main menu.
 There will be three tabs at the top, <b>Start</b>, <b>How To Play</b> and <b>Quit</b>.
 <ol>
-  <li><b>Start:</b> From this tab you can choose to play the game in colour or greyscale. There is also the Start button to Start the game.</li>
+  <li><b>Start:</b> From this tab you can choose to play the game in <b>Colour</b> or <b>Greyscale</b>. There is also the Start button to Start the game.</li>
   <li><b>How To Play:</b> This tab allows you the view the controls of the game.</li>
-  <li><b>Quit:</b> This tab allows the player to quit the game</li>
+  <li><b>Quit:</b> This tab allows the player to quit the game.</li>
 </ol>
 
 <h3>Character Controls</h3>
@@ -77,6 +77,6 @@ Upon starting the game,you will be greeted with the main menu, from there you ca
 <h2>Links to videos or websites that have helped me</h2>
 https://www.youtube.com/watch?v=Ri1uNPNlaVs&ab_channel=PeerPlay
 
-
+<h1>In game images</h1>
 </body>
 </html>
