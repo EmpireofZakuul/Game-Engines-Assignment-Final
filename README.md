@@ -13,7 +13,11 @@ This game is a 3D first person shooter that is based in a percedural generated c
 <p>
 Upon starting the game,you will be greeted with the main menu, from there you can choose to play the game in colour or greyscale.When you press the start button, you will take control of a first person character.
 <h3>Character Controls</h3>
-<b>To mave the character in the game, The W,A,S,D keys are used</b>
+<p>
+<b>To move the character in the game, The W,A,S,D keys are used</b>
+<b>The left mouse button is used to shoot the characters weapon</b>
+<b>The charcater has the use of 5 grenades in the game, to throw a grenande use the right mouse button</b>
+</p>
 </P>
 <h1>How it works</h1
 <p>
