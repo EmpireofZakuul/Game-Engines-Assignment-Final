@@ -1,3 +1,24 @@
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
 # Game-Engines-Assignment
 <p><b>Name:</b>Marcus Gleeson<br>
 <b>Student Number:</b>D19124543<br>
@@ -11,14 +32,13 @@ This game is a 3D first person shooter that is based in a percedural generated c
 </P>
 <h1>Instructions for use</h1
 <p>
-Upon starting the game,you will be greeted with the main menu, from there you can choose to play the game in colour or greyscale.When you press the start button, you will take control of a first person character.
+Upon starting the game, you will be greeted with the main menu. From there you can choose to play the game in colour or greyscale. When you press the start button, you will take control of a first person character.
 <h3>Character Controls</h3>
 <p>
 <table>
   <tr>
     <th><b>Task</b></th>
-    <th><b>Controls</b></th>
-    
+    <th><b>Controls</b></th> 
   </tr>
   <tr>
     <td>To Move The Character In The Game</td>
@@ -26,15 +46,19 @@ Upon starting the game,you will be greeted with the main menu, from there you ca
   </tr>
   <tr>
     <td>To Make The Character Jump</td>
-    <td>The Space Bar</td>
+    <td><b>The Space Bar</b></td>
   </tr>
   <tr>
     <td>To Shoot The Characters Weapon</td>
-    <td>The Left Mouse Button</td>
+    <td><b>The Left Mouse Button</b></td>
   </tr>
   <tr>
     <td>To Throw Grenades</td>
-    <td>The Right Mouse Button</td>
+    <td><b>The Right Mouse Button</b></td>
+  </tr>
+  <tr>
+    <td>To Exit To Menu</td>
+    <td><b>The Escape Key</b></td>
   </tr>
  
 </table>
@@ -64,3 +88,7 @@ Upon starting the game,you will be greeted with the main menu, from there you ca
 
 <h2>Links to videos or websites that have helped me</h2>
 https://www.youtube.com/watch?v=Ri1uNPNlaVs&ab_channel=PeerPlay
+
+
+</body>
+</html>
