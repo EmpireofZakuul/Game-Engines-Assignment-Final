@@ -911,7 +911,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297941059}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 0.001}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0013}
   m_LocalScale: {x: 0.00002, y: 0.00002, z: 0.00002}
   m_Children:
   - {fileID: 1756469708}
@@ -920,7 +920,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.009, y: -0.0045}
+  m_AnchoredPosition: {x: 0.0125, y: -0.0048}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &297941061
@@ -1963,10 +1963,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4b9fbd709068d64f879e2bcfdce6093, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridXAxis: 25
+  gridXAxis: 20
   gridYAxis: 15
   _prefabSpawnBuilding: {fileID: 8744518593014878252, guid: a5d72fdcaf00f994e8205dc606a6cbc4, type: 3}
-  centerOfTheGrid: {x: -200, y: 0, z: -100}
+  centerOfTheGrid: {x: -150, y: 0, z: -100}
   individualBuildingSpacing: 15
   onEnableGenerate: 1
   NavMeshSurface: {fileID: 0}
@@ -2650,7 +2650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 271170048332012583, guid: 0c8c8145f427b874e9436ee2cc549b7e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 216
+      value: 130.7
       objectReference: {fileID: 0}
     - target: {fileID: 271170048332012583, guid: 0c8c8145f427b874e9436ee2cc549b7e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2658,7 +2658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 271170048332012583, guid: 0c8c8145f427b874e9436ee2cc549b7e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -361.95258
+      value: -271.9
       objectReference: {fileID: 0}
     - target: {fileID: 271170048332012583, guid: 0c8c8145f427b874e9436ee2cc549b7e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2719,11 +2719,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713198708}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.14, y: 1.27, z: 0.12}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -53.221992, y: 210.55551, z: -2093.6152}
+  m_LocalScale: {x: 555.5556, y: 555.5556, z: 555.5556}
   m_Children: []
-  m_Father: {fileID: 1391201311}
-  m_RootOrder: 3
+  m_Father: {fileID: 1756469708}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &745337851
 GameObject:
@@ -3505,7 +3505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 271170048332012583, guid: 0c8c8145f427b874e9436ee2cc549b7e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 446
+      value: 310.7
       objectReference: {fileID: 0}
     - target: {fileID: 271170048332012583, guid: 0c8c8145f427b874e9436ee2cc549b7e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3513,7 +3513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 271170048332012583, guid: 0c8c8145f427b874e9436ee2cc549b7e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -361.95258
+      value: -253.7
       objectReference: {fileID: 0}
     - target: {fileID: 271170048332012583, guid: 0c8c8145f427b874e9436ee2cc549b7e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3721,8 +3721,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037221041}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 600, y: 0.2, z: 600}
+  m_LocalPosition: {x: -35.24, y: 0, z: 20.96}
+  m_LocalScale: {x: 361.62198, y: 0.2, z: 330.8368}
   m_Children:
   - {fileID: 442796348}
   m_Father: {fileID: 0}
@@ -3745,7 +3745,7 @@ MonoBehaviour:
   offsetOfThePerlinNoiseTexture: {x: 0, y: 0}
   randomizeTexture: 1
   scaleOfTheNoise: 1
-  perlinNoiseXAxisGrid: 25
+  perlinNoiseXAxisGrid: 20
   perlinNoiseYAxisGrid: 15
   perlinHeight: 1
   Building: {fileID: 0}
@@ -4746,7 +4746,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 3.5
+  m_Height: 3.4
   m_Radius: 0.6
   m_SlopeLimit: 45
   m_StepOffset: 0.7
@@ -4760,17 +4760,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391201309}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -279.6, y: 1.86, z: 221.1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 13, y: 1.79, z: 179.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1009898362}
   - {fileID: 1359525377}
   - {fileID: 1307397404}
-  - {fileID: 713198709}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1391201312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4812,7 +4811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 1
   grenade: {fileID: 1237498264592045, guid: 7a4f4e6c1493331409adada24a5d0e0c, type: 3}
-  speed: 20
+  speed: 25
   Hand: {fileID: 713198709}
   Grenadeamound: 5
   grenades: {fileID: 135282503}
@@ -4829,7 +4828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 2
-  projectile: {fileID: 2611405402142168859, guid: c659cfd09a9a0f446be368c9aa9a32df, type: 3}
+  projectile: {fileID: 3438428295888118511, guid: 7dfe03f7d9098a74182c0ebed8428713, type: 3}
   bulletSpawn: {fileID: 1987319056}
   speed: 30
 --- !u!1 &1403175720
@@ -5255,7 +5254,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 713198709}
   m_Father: {fileID: 297941060}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6410,7 +6410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 271170048332012583, guid: 0c8c8145f427b874e9436ee2cc549b7e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -361.95258
+      value: -287
       objectReference: {fileID: 0}
     - target: {fileID: 271170048332012583, guid: 0c8c8145f427b874e9436ee2cc549b7e, type: 3}
       propertyPath: m_LocalRotation.x
