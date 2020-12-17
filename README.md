@@ -62,9 +62,11 @@ Upon starting the game,you will be greeted with the main menu, from there you ca
 <p>
 If I was to choose what I was most proud of in the assignment, It would be very difficult to choose one, so I have choosen my top three.
 <ol>
-  <li><b>The GreyScale shader</b></li>
-  <li><b>Percedural city</b></li>
-  <li><b>Building Assets</b></li>
+  <li><b>The GreyScale shader:was simple enought to creat and what I like to most about the shader, is that it adds another way that the player can play the game. 
+         In my opinion I perfer the greyscale version of the game more then the coloured version of the game. 
+         A feature I like is the ablity to switch from colour to greyscale view or vice versa at any time, by simply bring up the games menu in game</b></li>
+  <li><b>Percedural city: </b></li>
+  <li><b>Building Assets:</b></li>
 </ol>
 </P>
 <h1>Game Proposal</h1>
