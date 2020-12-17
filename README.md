@@ -65,7 +65,9 @@ Upon the player pressing the start button, You will take control of a first pers
 The enemies will spawn staggered into the game with two seconds inbetween each spawn. When the enemies count reaches 10, the spawning stops. 
 A total of 20 enemies will spawn in the game, and for every enemy you kill, another will spawn in its place.
 </P>
-<p>The goal of the player is to kill all the enemies using the players weapon and the pervided grenades</p>
+<p>The goal of the player is to kill all the enemies using the players weapon and the pervided grenades.
+How to player kills the enemies is up to the player, the player can wait for the enemies to come to the player or the player can roam around the city and kill the enemies.
+If the player kills all the enemies, then the player will win the game but if the player loses all there lives, then the player will lose the game.</p>
 <h1>References</h1>
 <p>
 </P>
