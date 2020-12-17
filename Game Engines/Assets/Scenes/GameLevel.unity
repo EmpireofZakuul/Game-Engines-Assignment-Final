@@ -1517,10 +1517,9 @@ MonoBehaviour:
   audioSource: {fileID: 392652394}
   audioClips:
   - {fileID: 8300000, guid: cdce745bb3e3be947b4ec19a308f150d, type: 3}
-  - {fileID: 8300000, guid: 0f9082f6ee9b23949bf54bd8af412541, type: 3}
+  - {fileID: 8300000, guid: 2bc34b08a3a9d5645927696dab28e764, type: 3}
   - {fileID: 8300000, guid: 8fc1cf24d52b2554da4b47d6df4d18fb, type: 3}
   - {fileID: 8300000, guid: c9399475453317e4dba83a426f15d65f, type: 3}
-  - {fileID: 8300000, guid: 2bc34b08a3a9d5645927696dab28e764, type: 3}
   audioListener: {fileID: 1359525375}
 --- !u!4 &392652393
 Transform:
@@ -4784,7 +4783,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a4abbdf4085b5647a6efaca6e382b78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ascript: {fileID: 1359525381}
   characterDie: {fileID: 1391201309}
   playerController: {fileID: 1391201310}
   characterSpeed: 12

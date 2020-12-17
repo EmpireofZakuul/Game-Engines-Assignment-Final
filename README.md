@@ -10,6 +10,7 @@
 <p>
 This game is a 3D first person shooter that is based in a percedural generated city.
 </P>
+
 <h1>Instructions for use</h1
 <p>
 Upon starting the game, you will be greeted with the main menu.
@@ -19,7 +20,6 @@ There will be three tabs at the top, <b>Start</b>, <b>How To Play</b> and <b>Qui
   <li><b>How To Play:</b> This tab allows you the view the controls of the game.</li>
   <li><b>Quit:</b> This tab allows the player to quit the game.</li>
 </ol>
-
 <h3>Character Controls</h3>
 <p>
 <table>
@@ -51,6 +51,7 @@ There will be three tabs at the top, <b>Start</b>, <b>How To Play</b> and <b>Qui
 </table>
 </p>
 </P>
+
 <h1>How it works</h1
 <p>
 Upon starting the game, you will be greeted with the main menu.
@@ -65,12 +66,16 @@ Upon the player pressing the start button, You will take control of a first pers
 The enemies will spawn staggered into the game with two seconds inbetween each spawn. When the enemies count reaches 10, the spawning stops. 
 A total of 20 enemies will spawn in the game, and for every enemy you kill, another will spawn in its place.
 </P>
+<p>Whe you press the start button, the game will randomly choose between four different songs from an array, This song will play in the game and when the song finishes, it will randomly pick another song.
+   In the game There is a a bright sun that has two rotating circles of cubes that react to to song that is being played, wach cube tha spawns has post process effect on them, so when they spawn in each cube will be a different colour.</p>
 <p>The goal of the player is to kill all the enemies using the players weapon and the pervided grenades.
 How to player kills the enemies is up to the player, the player can wait for the enemies to come to the player or the player can roam around the city and kill the enemies.
 If the player kills all the enemies, then the player will win the game but if the player loses all there lives, then the player will lose the game.</p>
+
 <h1>References</h1>
 <p>
 </P>
+
 <h1>What I am most proud of in the assignment</h1>
 <p>
 If I was to choose what I was most proud of in the assignment, It would be very difficult to choose one, so I have choosen my top three.
@@ -84,7 +89,7 @@ If I was to choose what I was most proud of in the assignment, It would be very 
 	This allows the heights of the buildings to be a varity of different sizes, which makes the city feel more alive, instead of prefabs of ready made building being spawned in.
 	Not only does this allow the city to be unique, each time the game is played, but I also feel that it will add some more playablity to the game.</li>
 	<img src="/images/City.png" style="width:128px;height:128px;"> 
-  <li><b>Enemies:</b>The last Part of what I was most proud of in the assignment was, The Enemy assets, which I made in the blender 3D modelling software. 
+  <li><b>Enemies:</b>The last part of what I was most proud of in the assignment was, The enemy assets, which I made in the blender 3D modelling software. 
          I built the walking animations for the enemies in Unity and I coded them that each enemy will be a different colour when they spawn in. 
          I was really happy how they turned out and I think they add to the game very nicely.  </li>
 	<img src="/images/Gonk.png" style="width:128px;height:128px;">
