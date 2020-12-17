@@ -62,7 +62,7 @@ There will be three tabs at the top, <b>Start</b>, <b>How To Play</b> and <b>Qui
 </ol>
 
 Upon the player pressing the start button, You will take control of a first person shooter, enemies will start to spawn immediatly from three different spawn points around the city.
-The enemies will spawn staggered into the game with two second inbetween each spawn. When the enemies count reaches 10, the spawning stops. 
+The enemies will spawn staggered into the game with two seconds inbetween each spawn. When the enemies count reaches 10, the spawning stops. 
 A total of 20 enemies will spawn in the game, and for every enemy you kill, another will spawn in its place.
 </P>
 <p>The goal of the player is to kill all the enemies using the players weapon and the pervided grenades</p>
@@ -76,6 +76,7 @@ If I was to choose what I was most proud of in the assignment, It would be very 
   <li><b>The GreyScale shader:</b>was simple enought to create and what I like to most about the shader, is that it adds another way that the player can play the game. 
          In my opinion I perfer the greyscale version of the game more then the coloured version of the game. 
          A feature I like is the ablity to switch from colour to greyscale view or vice versa at any time, by simply bring up the games menu in game.</li>
+<img src="/images/GreyscaleInGame.png" style="width:128px;height:128px;">
   <li><b>Percedural city:</b> I was very pleased when I got the percedural Generated city working. On top of getting the city to generate, I was pleased to be able to get the perlin noise to work aswell.
 This allows the heights of the buildings to be a varity of different sizes, which makes the city feel more alive, instead of prefabs of ready made building being spawned in.
 Not only does this allow the city to be unique, each time the game is played, but I also feel that it will add some more playablity to the game.</li>
