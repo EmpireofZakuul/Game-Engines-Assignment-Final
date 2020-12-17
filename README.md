@@ -68,7 +68,9 @@ If I was to choose what I was most proud of in the assignment, It would be very 
   <li><b>Percedural city:</b> I was very pleased when I got the percedural Generated city working. On top of getting the city to generate, I was pleased to be able to get the perlin noise to work aswell.
 This allows the heights of the buildings to be a varity of different sizes, which makes the city feel more alive, instead of prefabs of ready made building being spawned in.
 Not only does this allow the city to be unique, each time the game is played, but I also feel that it will add some more playablity to the game.</li>
-  <li><b>Building Assets:</b></li>
+  <li><b>Enemies:</b>The last Part of what I was most proud of in the assignment was, The Enemy assets, which I made in the blender 3D modelling software. 
+         I built the walking animations for the enemies in Unity and I coded them that each enemy will be a different colour when they spawn in. 
+         I was really happy how they turned out and I think they add to the game very nicely.  </li>
 </ol>
 </P>
 <h1>Game Proposal</h1>
