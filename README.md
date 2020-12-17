@@ -53,8 +53,19 @@ There will be three tabs at the top, <b>Start</b>, <b>How To Play</b> and <b>Qui
 </P>
 <h1>How it works</h1
 <p>
-Upon starting the game,you will be greeted with the main menu, from there you can choose to play the game in colour or greyscale.
+Upon starting the game, you will be greeted with the main menu.
+There will be three tabs at the top, <b>Start</b>, <b>How To Play</b> and <b>Quit</b>.
+<ol>
+  <li><b>Start:</b> From this tab you can choose to play the game in <b>Colour</b> or <b>Greyscale</b>. There is also the Start button to Start the game.</li>
+  <li><b>How To Play:</b> This tab allows you the view the controls of the game.</li>
+  <li><b>Quit:</b> This tab allows the player to quit the game.</li>
+</ol>
+
+Upon the player pressing the start button, You will take control of a first person shooter, enemies will start to spawn immediatly from three different spawn points around the city.
+The enemies will spawn staggered into the game with two second inbetween each spawn. When the enemies count reaches 10, the spawning stops. 
+A total of 20 enemies will spawn in the game, and for every enemy you kill, another will spawn in its place.
 </P>
+<p>The goal of the player is to kill all the enemies using the players weapon and the pervided grenades</p>
 <h1>References</h1>
 <p>
 </P>
