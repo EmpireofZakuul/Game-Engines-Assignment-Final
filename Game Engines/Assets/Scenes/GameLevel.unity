@@ -1963,8 +1963,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4b9fbd709068d64f879e2bcfdce6093, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridXAxis: 30
-  gridYAxis: 20
+  gridXAxis: 25
+  gridYAxis: 15
   _prefabSpawnBuilding: {fileID: 8744518593014878252, guid: a5d72fdcaf00f994e8205dc606a6cbc4, type: 3}
   centerOfTheGrid: {x: -200, y: 0, z: -100}
   individualBuildingSpacing: 15
@@ -3745,8 +3745,8 @@ MonoBehaviour:
   offsetOfThePerlinNoiseTexture: {x: 0, y: 0}
   randomizeTexture: 1
   scaleOfTheNoise: 1
-  perlinNoiseXAxisGrid: 40
-  perlinNoiseYAxisGrid: 40
+  perlinNoiseXAxisGrid: 25
+  perlinNoiseYAxisGrid: 15
   perlinHeight: 1
   Building: {fileID: 0}
   vis: {fileID: 1984789839}
