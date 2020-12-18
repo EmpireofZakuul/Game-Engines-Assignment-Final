@@ -110,9 +110,16 @@ public class EnemyExplode : MonoBehaviour
                    // coll[i].gameObject.GetComponent<Rigidbody>().AddExplosionForce(expolsiveForce, transform.position, BlowRadius);
                 }
             }
-          
-          
-        
+           
+    }
+
+      private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, BlowRadius);
+
+       
+
         
     }
 }

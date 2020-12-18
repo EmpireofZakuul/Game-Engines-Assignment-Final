@@ -361,7 +361,7 @@ MonoBehaviour:
   speed: 20
   intensity: 2
   enemeyColour: {fileID: 7298781665886326818}
-  explode: {fileID: 0}
+  explode: {fileID: 7605192809051671402}
   baseLocation: {x: 0, y: 0, z: 0}
   Explodeenemy: 0
 --- !u!82 &7605192808005611282

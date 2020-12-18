@@ -35,6 +35,9 @@ public class EnemyMovement : MonoBehaviour
        Renderer r = enemeyColour.GetComponent<Renderer>();
         //r.material.SetColor("_EmissionColor", Color.HSVToRGB(1f, 1f, 1f) * intensity);
         r.material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+
+          EnemyExplode explode = GetComponentInChildren<EnemyExplode>();
+        
     }
 
     // Update is called once per frame
@@ -49,10 +52,9 @@ public class EnemyMovement : MonoBehaviour
 
         if (distance <= stopRadius && !Explodeenemy)
         {
-            //stopAgent();
-            // Shooting();
         Explodeenemy = true;
-           //explode.ExampleCoroutine();
+           explode.health = 0;
+          
         }
     }
 
@@ -60,6 +62,9 @@ public class EnemyMovement : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, stopRadius);
 
         
     }
