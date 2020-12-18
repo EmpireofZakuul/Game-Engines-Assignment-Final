@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
     [Header("Enemy Movement")]
     public float lookRadius = 20f;
      public float stopRadius = 6f;
+     public float beepRadius = 6f;
     public NavMeshAgent nav;
     Transform target;
     private GameObject player;
@@ -24,6 +25,8 @@ public class EnemyMovement : MonoBehaviour
 
     public Vector3 baseLocation;
        public bool Explodeenemy = false;
+       public bool beepSound = false;
+        public AudioSource source;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +39,8 @@ public class EnemyMovement : MonoBehaviour
         //r.material.SetColor("_EmissionColor", Color.HSVToRGB(1f, 1f, 1f) * intensity);
         r.material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
 
-          EnemyExplode explode = GetComponentInChildren<EnemyExplode>();
+          //EnemyExplode explode = GetComponentInChildren<EnemyExplode>();
+          source = GetComponent<AudioSource>();
         
     }
 
@@ -49,11 +53,17 @@ public class EnemyMovement : MonoBehaviour
            // nav.SetDestination(baseLocation);
             nav.SetDestination(target.transform.position);
         }
+        if (distance <= beepRadius && !beepSound)
+        {
+        source.Play();
+        beepSound = true;
+        }
 
         if (distance <= stopRadius && !Explodeenemy)
         {
         Explodeenemy = true;
-           explode.health = 0;
+           //explode.health = 0;
+           explode.CloseExpolde();
           
         }
     }
@@ -62,6 +72,9 @@ public class EnemyMovement : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
+
+         Gizmos.color = Color.magenta;
+        Gizmos.DrawWireSphere(transform.position, beepRadius);
 
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, stopRadius);

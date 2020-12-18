@@ -271,7 +271,7 @@ MonoBehaviour:
   health: 0
   EnemyHealthBar: {fileID: 7605192807918291599}
   Spawner: {fileID: 271170048332012580, guid: 0c8c8145f427b874e9436ee2cc549b7e, type: 3}
-  BlowRadius: 6
+  BlowRadius: 3
 --- !u!65 &7605192808880831160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -285,6 +285,102 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5242807, y: 0.67726654, z: 0.67449963}
   m_Center: {x: -0.0914034, y: -0.18502733, z: 0.050141677}
+--- !u!82 &318412608
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7298781666110564353}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 66a6edcdb49c71245bff8df74301e4f4, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7605192808005611497
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +392,7 @@ GameObject:
   - component: {fileID: 7605192808005611284}
   - component: {fileID: 7605192808005611287}
   - component: {fileID: 7605192808005611286}
-  - component: {fileID: 7605192808005611282}
+  - component: {fileID: 766185852}
   m_Layer: 0
   m_Name: GonkDroid
   m_TagString: Enemy
@@ -354,8 +450,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc4985b0fb99c9a45900a275600abbfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookRadius: 20
-  stopRadius: 6
+  lookRadius: 15
+  stopRadius: 3
+  beepRadius: 7
   nav: {fileID: 7605192808005611287}
   originalSpeed: 5
   speed: 20
@@ -364,7 +461,9 @@ MonoBehaviour:
   explode: {fileID: 7605192809051671402}
   baseLocation: {x: 0, y: 0, z: 0}
   Explodeenemy: 0
---- !u!82 &7605192808005611282
+  beepSound: 0
+  source: {fileID: 766185852}
+--- !u!82 &766185852
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -374,11 +473,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 66a6edcdb49c71245bff8df74301e4f4, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 76604f2fc03c51d44bd3d15516849043, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
+  m_Pitch: 1.3
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

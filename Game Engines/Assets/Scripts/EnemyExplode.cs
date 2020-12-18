@@ -67,12 +67,12 @@ public class EnemyExplode : MonoBehaviour
         //yield return new WaitForSeconds(2);
         source.clip = clipsAudio[0];
         source.Play();
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         source.clip = clipsAudio[1];
         source.Play();
         Instantiate(effect, transform.position, transform.rotation);
         Explode();
-        Destroy(destroy, 0.9f);
+        Destroy(destroy, 0.7f);
 
        
 
@@ -111,6 +111,18 @@ public class EnemyExplode : MonoBehaviour
                 }
             }
            
+    }
+
+   public void CloseExpolde()
+    {
+
+        Spawner.count--; 
+        source.clip = clipsAudio[1];
+        source.Play();
+        Instantiate(effect, transform.position, transform.rotation);
+        Explode();
+        Destroy(destroy, 0.5f);
+
     }
 
       private void OnDrawGizmosSelected()
