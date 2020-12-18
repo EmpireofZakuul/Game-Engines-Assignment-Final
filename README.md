@@ -9,6 +9,8 @@
 <h1>Description of the project</h1>
 <p>
 This game is a 3D first person shooter that is based in a percedural generated city.
+The city is percedural generated using perlin noise which makes the city unique due to the buildings being a variation of heights.
+
 </P>
 
 <h1>Instructions for use</h1
