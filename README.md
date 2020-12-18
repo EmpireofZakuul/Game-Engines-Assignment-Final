@@ -9,9 +9,10 @@
 <h1>Description of the project</h1>
 <p>
 This game is a 3D first person shooter that is based in a percedural generated city.
-You will take control of a first person character and using your weapon and the allocated grenades, you will need to defeat the hords of enemies.
+You will take control of a first person character and using your weapon and the allocated grenades, you will need to defeat the hordes of enemies.
 The city is percedural generated using perlin noise which makes the city unique due to the buildings being a variation of heights.
-In the game you will have a choice to player the game in colour or greyscale, which offeres a new way to see and play the game.
+In the game you will have a choice to player the game in either colour or greyscale, which offeres a new way to see and play the game.
+The goal of the player is to kill all the enemies to win the game, but if the player is killed, then the player will lose the game.
 
 </P>
 
