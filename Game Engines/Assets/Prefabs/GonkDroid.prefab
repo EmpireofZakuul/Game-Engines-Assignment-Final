@@ -271,7 +271,7 @@ MonoBehaviour:
   health: 0
   EnemyHealthBar: {fileID: 7605192807918291599}
   Spawner: {fileID: 271170048332012580, guid: 0c8c8145f427b874e9436ee2cc549b7e, type: 3}
-  BlowRadius: 3
+  BlowRadius: 4
 --- !u!65 &7605192808880831160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookRadius: 15
-  stopRadius: 3
+  stopRadius: 4
   beepRadius: 7
   nav: {fileID: 7605192808005611287}
   originalSpeed: 5

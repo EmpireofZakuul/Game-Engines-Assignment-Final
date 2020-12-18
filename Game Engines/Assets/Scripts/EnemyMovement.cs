@@ -58,6 +58,10 @@ public class EnemyMovement : MonoBehaviour
         source.Play();
         beepSound = true;
         }
+        else if( distance >= beepRadius)
+        {
+            beepSound = false;
+        }
 
         if (distance <= stopRadius && !Explodeenemy)
         {
