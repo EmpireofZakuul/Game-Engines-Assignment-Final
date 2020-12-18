@@ -9,7 +9,9 @@
 <h1>Description of the project</h1>
 <p>
 This game is a 3D first person shooter that is based in a percedural generated city.
+You will take control of a first person character and using your weapon and the allocated grenades, you will need to defeat the hords of enemies.
 The city is percedural generated using perlin noise which makes the city unique due to the buildings being a variation of heights.
+In the game you will have a choice to player the game in colour or greyscale, which offeres a new way to see and play the game.
 
 </P>
 
@@ -70,7 +72,7 @@ A total of 20 enemies will spawn in the game, and for every enemy you kill, anot
 </P>
 <p>Whe you press the start button, the game will randomly choose between four different songs from an array, This song will play in the game and when the song finishes, it will randomly pick another song.
    In the game There is a a bright sun that has two rotating circles of cubes that react to to song that is being played, wach cube tha spawns has post process effect on them, so when they spawn in each cube will be a different colour.</p>
-<p>The goal of the player is to kill all the enemies using the players weapon and the pervided grenades.
+<p>The goal of the player is to kill all the enemies using the players weapon and the allocated grenades.
 How to player kills the enemies is up to the player, the player can wait for the enemies to come to the player or the player can roam around the city and kill the enemies.
 If the player kills all the enemies, then the player will win the game but if the player loses all there lives, then the player will lose the game.</p>
 
