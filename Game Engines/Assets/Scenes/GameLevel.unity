@@ -6024,8 +6024,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d5d57e24c6b22498b0b6efbe97af56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionMove: {x: 0, y: 60, z: 350}
-  backPositionMove: {x: 0, y: 60, z: 0}
+  positionMove: {x: -197, y: 60, z: 183}
+  backPositionMove: {x: 120, y: 60, z: -112}
+  returnPositionMove: {x: 0, y: 60, z: 0}
 --- !u!1 &2030124984
 GameObject:
   m_ObjectHideFlags: 0

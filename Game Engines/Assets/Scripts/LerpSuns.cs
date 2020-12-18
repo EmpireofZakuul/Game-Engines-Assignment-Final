@@ -6,6 +6,8 @@ public class LerpSuns : MonoBehaviour
 {
     public Vector3 positionMove;
     public Vector3 backPositionMove;
+
+      public Vector3 returnPositionMove;
    // private Vector3 originalPosition;
     // Start is called before the first frame update
     void Start()
@@ -44,13 +46,27 @@ public class LerpSuns : MonoBehaviour
                 time += Time.deltaTime;
                 yield return null;
             }
+            transform.position = target;
+        if(transform.position == target){
+             StartCoroutine(ReturnPositionLerp(returnPositionMove, 40));
         } 
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator ReturnPositionLerp(Vector3 positionTarget, float tduration)
     {
-       
+        float mtime = 0;
+        Vector3 returnOriginal = transform.position;
+
+         while(mtime < duration)
+         {
+             transform.position = Vector3.Lerp(returnOriginal, positionTarget, mtime/ tduration);
+             mtime += Time.deltaTime;
+             yield return null;
+         }
         
+        }
+         
     }
+
+   
 }
