@@ -56,4 +56,14 @@ public class Grenade : MonoBehaviour
         Debug.Log("boom");
         Destroy(gameObject, 1f);
     }
+
+     private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, radiusExplosion);
+
+        
+
+        
+    }
 }

@@ -4811,7 +4811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 1
   grenade: {fileID: 1237498264592045, guid: 7a4f4e6c1493331409adada24a5d0e0c, type: 3}
-  speed: 25
+  speed: 20
   Hand: {fileID: 713198709}
   Grenadeamound: 5
   grenades: {fileID: 135282503}

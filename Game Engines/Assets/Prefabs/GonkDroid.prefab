@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc4985b0fb99c9a45900a275600abbfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookRadius: 15
+  lookRadius: 10
   stopRadius: 4
   beepRadius: 7
   nav: {fileID: 7605192808005611287}
