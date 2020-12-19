@@ -121,5 +121,7 @@ https://www.youtube.com/watch?v=Ri1uNPNlaVs&ab_channel=PeerPlay
 <img src="/images/menu.png" style="width:128px;height:128px;"> 
 <img src="/images/InGame.png" style="width:128px;height:128px;"> 
 <img src="/images/InGameColour.png" style="width:128px;height:128px;"> 
+<img src="/images/Greyscale 1.png" style="width:128px;height:128px;"> 
+<img src="/images/Greyscale 2.png" style="width:128px;height:128px;"> 
 </body>
 </html>
