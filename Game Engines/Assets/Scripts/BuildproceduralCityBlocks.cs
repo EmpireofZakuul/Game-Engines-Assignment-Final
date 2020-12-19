@@ -15,6 +15,7 @@ public class BuildproceduralCityBlocks : MonoBehaviour
     public GameObject[] buildingTopParts;
 
     public bool spotTaken = false;
+  //  public float intensity;
 
     void Start()
     {
@@ -58,6 +59,9 @@ public class BuildproceduralCityBlocks : MonoBehaviour
         cloneSpawn.transform.SetParent(this.transform);
     
         BuildingControl.instance.Objects(cloneSpawn);
+
+        // Renderer r = cloneSpawn.GetComponent<Renderer>();
+            //r.material.SetColor("_EmissionColor", Color.HSVToRGB(1f, 1f, 1f) * intensity);
 
         return OffsetHeight;
     }
