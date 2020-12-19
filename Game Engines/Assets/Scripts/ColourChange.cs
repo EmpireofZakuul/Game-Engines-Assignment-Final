@@ -14,7 +14,7 @@ public class ColourChange : MonoBehaviour
 
     private Image _image;
     public Material neonMaterial;
-    private	 float m ;
+    private	 float m;
 
     void Start()
     {
@@ -35,7 +35,7 @@ public class ColourChange : MonoBehaviour
             _image.color = Color.HSVToRGB(m, 1f, 1f);
 
         if (neonMaterial)
-            neonMaterial.SetColor("_EmissionColor", Color.HSVToRGB(m, 1f, 1f) * Intensity);
+            neonMaterial.SetColor("_EmissionColor", Color.HSVToRGB(m * 1, 1f, 1f) * Intensity);
         if (m > 1f)
             m = 0;
     }
