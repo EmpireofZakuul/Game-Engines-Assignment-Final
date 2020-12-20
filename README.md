@@ -11,7 +11,7 @@
 This game is a 3D first person shooter that is based in a percedural generated city.
 You will take control of a first person character and using your weapon and the allocated grenades, you will need to defeat the hordes of enemies.
 The city is percedural generated using perlin noise which makes the city unique due to the buildings being a variation of heights.
-In the game you will have a choice to player the game in either colour or greyscale, which offeres a new way to see and play the game.
+In the game you will have a choice to play the game in either colour or greyscale, which offeres a new way to see and play the game.
 The goal of the player is to kill all the enemies to win the game, but if the player is killed, then the player will lose the game.
 
 </P>
@@ -71,7 +71,7 @@ Upon the player pressing the start button, You will take control of a first pers
 The enemies will spawn staggered into the game with two seconds inbetween each spawn. When the enemies count reaches 10, the spawning stops. 
 A total of 20 enemies will spawn in the game, and for every enemy you kill, another will spawn in its place.
 </P>
-<p>Whe you press the start button, the game will randomly choose between four different songs from an array, This song will play in the game and when the song finishes, it will randomly pick another song.
+<p>When you press the start button, the game will randomly choose between four different songs from an array, This song will play in the game and when the song finishes, it will randomly pick another song.
    In the game There is a a bright sun that has two rotating circles of cubes that react to to song that is being played, wach cube tha spawns has post process effect on them, so when they spawn in each cube will be a different colour.</p>
 <p>The goal of the player is to kill all the enemies using the players weapon and the allocated grenades.
 How to player kills the enemies is up to the player, the player can wait for the enemies to come to the player or the player can roam around the city and kill the enemies.
@@ -79,8 +79,17 @@ If the player kills all the enemies, then the player will win the game but if th
 
 <h1>References</h1>
 <p>
-https://www.youtube.com/watch?v=_QajrabyTJc&t=1289s&ab_channel=Brackeys
-
+<h2>Videos</h2>
+<b>Brackeys FIRST PERSON MOVEMENT in Unity:</b>https://www.youtube.com/watch?v=_QajrabyTJc&t=1289s&ab_channel=Brackeys <br>
+<b>Audio Visualization:</b>https://www.youtube.com/watch?v=Ri1uNPNlaVs&ab_channel=PeerPlay <br>
+<b>Brackeys How to make a HEALTH BAR in Unity!:</b>https://www.youtube.com/watch?v=BLfNP4Sc_iA&t=595s&ab_channel=Brackeys <br>
+</p>
+<p>
+<h2>Songs</h2>
+<b>Davy Jones theme song:</b>https://www.youtube.com/watch?v=5fe9W1gZPUs&ab_channel=jakjak777 <br>
+<b>Das Boot 1981 Original Soundtrack:</b>https://www.youtube.com/watch?v=dkgtA30tZn8&ab_channel=murat80s <br>
+<b>Kingdom of Heaven soundtrack - Crusaders LONG VERSION:</b>https://www.youtube.com/watch?v=02PxQmHIQ5o&ab_channel=Ithrael <br>
+<b>Raimon de Miraval - Chansoneta Farai Vencut:</b>https://www.youtube.com/watch?v=wM5wsk8hKr8&ab_channel=AndriaRogava
 </P>
 
 <h1>What I am most proud of in the assignment</h1>
@@ -102,6 +111,10 @@ If I was to choose what I was most proud of in the assignment, It would be very 
 	<img src="/images/Gonk.png" style="width:128px;height:128px;">
 </ol>
 </P>
+<h1>Video Of Game Play</h1>
+<p> 
+
+</p>
 <h1>Game Proposal</h1>
 <p>For my Game Engines Assignment, I will be doing a procedurally generated city shooter game. This city will feature procedurally generated buildings of different heights that the player can roam around.</p>
 <p>On top of the procedurally generated city, I will look at using the unity spectrum data to make a sphere in the game look like a sun with rotating rings that reacts to the sound of the game music.</p>
