@@ -72,7 +72,7 @@ The enemies will spawn staggered into the game with two seconds inbetween each s
 A total of 20 enemies will spawn in the game, and for every enemy you kill, another will spawn in its place.
 </P>
 <p>When you press the start button, the game will randomly choose between four different songs from an array, This song will play in the game and when the song finishes, it will randomly pick another song.
-   In the game There is a a bright sun that has two rotating circles of cubes that react to to song that is being played, wach cube tha spawns has post process effect on them, so when they spawn in each cube will be a different colour.</p>
+   In the game There is a a bright sun that has two rotating circles of cubes that react to to song that is being played, each cube that spawns has a post process effect on them, so when they spawn in each cube will be a different colour.</p>
 <p>The goal of the player is to kill all the enemies using the players weapon and the allocated grenades.
 How to player kills the enemies is up to the player, the player can wait for the enemies to come to the player or the player can roam around the city and kill the enemies.
 If the player kills all the enemies, then the player will win the game but if the player loses all there lives, then the player will lose the game.</p>
@@ -113,7 +113,9 @@ If I was to choose what I was most proud of in the assignment, It would be very 
 </P>
 <h1>Video Of Game Play</h1>
 <p> 
-
+<video width="400" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+</video>
 </p>
 <h1>Game Proposal</h1>
 <p>For my Game Engines Assignment, I will be doing a procedurally generated city shooter game. This city will feature procedurally generated buildings of different heights that the player can roam around.</p>
