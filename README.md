@@ -113,9 +113,7 @@ If I was to choose what I was most proud of in the assignment, It would be very 
 </P>
 <h1>Video Of Game Play</h1>
 <p> 
-<video width="400" controls>
-  <source src="mov_bbb.mp4" type="video/mp4">
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AeoWiYCTMWE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 <h1>Game Proposal</h1>
 <p>For my Game Engines Assignment, I will be doing a procedurally generated city shooter game. This city will feature procedurally generated buildings of different heights that the player can roam around.</p>
