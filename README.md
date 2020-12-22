@@ -13,7 +13,7 @@ You will take control of a first person character, using your weapon and the all
 The city is percedural generated using perlin noise, which makes the city unique due to the buildings being a variation of heights.
 In the game you will have a choice to play the game in either colour or greyscale, which offeres a new way to see and play the game.
 The goal of the player is to kill all the enemies to win the game, but if the player is killed, then the player will lose the game.
-
+Beware, if you get too close to the enemies, they will explode dealing damage to you. The enemies will also explode upon death, dealing damage to the player if in the blast radius.
 </P>
 
 <h1>Instructions for use</h1
@@ -75,7 +75,9 @@ A total of 20 enemies will spawn in the game, and for every enemy you kill, anot
    In the game there is a bright sun that has two rotating circles of cubes that react to song that is being played, each cube that spawns has a post process effect on them, so when they spawn in, each cube will be a different colour.</p>
 <p>The goal of the player is to kill all the enemies using the players weapon and the allocated grenades.
 How to player kills the enemies is up to the player, the player can wait for the enemies to come to the player or the player can roam around the city and kill the enemies.
-If the player kills all the enemies, then the player will win the game but if the player loses all there lives, then the player will lose the game.</p>
+If the player kills all the enemies, then the player will win the game but if the player loses all there lives, then the player will lose the game.
+Beware, if you get too close to the enemies, they will explode dealing damage to you. The enemies will also explode upon death, dealing damage to the player if in the blast radius.
+</p>
 
 <h1>References</h1>
 <p>
