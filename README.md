@@ -9,8 +9,8 @@
 <h1>Description of the project</h1>
 <p>
 This game is a 3D first person shooter that is based in a percedural generated city.
-You will take control of a first person character and using your weapon and the allocated grenades, you will need to defeat the hordes of enemies.
-The city is percedural generated using perlin noise which makes the city unique due to the buildings being a variation of heights.
+You will take control of a first person character, using your weapon and the allocated grenades, you will need to defeat the hordes of enemies.
+The city is percedural generated using perlin noise, which makes the city unique due to the buildings being a variation of heights.
 In the game you will have a choice to play the game in either colour or greyscale, which offeres a new way to see and play the game.
 The goal of the player is to kill all the enemies to win the game, but if the player is killed, then the player will lose the game.
 
@@ -68,11 +68,11 @@ There will be three tabs at the top, <b>Start</b>, <b>How To Play</b> and <b>Qui
 </ol>
 
 Upon the player pressing the start button, You will take control of a first person shooter, enemies will start to spawn immediatly from three different spawn points around the city.
-The enemies will spawn staggered into the game with two seconds inbetween each spawn. When the enemies count reaches 10, the spawning stops. 
+The enemies will spawn staggered into the game with two seconds inbetween each spawn. When the enemy count reaches 10, the spawning stops. 
 A total of 20 enemies will spawn in the game, and for every enemy you kill, another will spawn in its place.
 </P>
 <p>When you press the start button, the game will randomly choose between four different songs from an array, This song will play in the game and when the song finishes, it will randomly pick another song.
-   In the game There is a a bright sun that has two rotating circles of cubes that react to to song that is being played, each cube that spawns has a post process effect on them, so when they spawn in each cube will be a different colour.</p>
+   In the game there is a bright sun that has two rotating circles of cubes that react to song that is being played, each cube that spawns has a post process effect on them, so when they spawn in, each cube will be a different colour.</p>
 <p>The goal of the player is to kill all the enemies using the players weapon and the allocated grenades.
 How to player kills the enemies is up to the player, the player can wait for the enemies to come to the player or the player can roam around the city and kill the enemies.
 If the player kills all the enemies, then the player will win the game but if the player loses all there lives, then the player will lose the game.</p>
@@ -101,7 +101,7 @@ If I was to choose what I was most proud of in the assignment, It would be very 
          A feature I like is the ablity to switch from colour to greyscale view or vice versa at any time, by simply bring up the games menu in game.</li>
 	<img src="/images/GreyscaleInGame.png" style="width:128px;height:128px;">
 
-  <li><b>Percedural city:</b> I was very pleased when I got the percedural Generated city working. On top of getting the city to generate, I was pleased to be able to get the perlin noise to work aswell.
+  <li><b>Percedural city:</b> I was very pleased when I got the percedural generated city working. On top of getting the city to generate, I was pleased to be able to get the perlin noise to work aswell.
 	This allows the heights of the buildings to be a varity of different sizes, which makes the city feel more alive, instead of prefabs of ready made building being spawned in.
 	Not only does this allow the city to be unique, each time the game is played, but I also feel that it will add some more playablity to the game.</li>
 	<img src="/images/City.png" style="width:128px;height:128px;"> 
@@ -112,9 +112,9 @@ If I was to choose what I was most proud of in the assignment, It would be very 
 </ol>
 </P>
 <h1>Video Of Game Play</h1>
-<p> 
+
 [![YouTube](http://img.youtube.com/vi/AeoWiYCTMWE/0.jpg)](https://youtube.com/watch?v=AeoWiYCTMWE)
-</p>
+
 <h1>Game Proposal</h1>
 <p>For my Game Engines Assignment, I will be doing a procedurally generated city shooter game. This city will feature procedurally generated buildings of different heights that the player can roam around.</p>
 <p>On top of the procedurally generated city, I will look at using the unity spectrum data to make a sphere in the game look like a sun with rotating rings that reacts to the sound of the game music.</p>
